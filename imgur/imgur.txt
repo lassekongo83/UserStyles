@@ -1,4 +1,4 @@
-! Title: Imgur uBO user style
+! Title: Imgur UserStyle
 ! Expires: 30 days (update frequency)
 ! Homepage: https://github.com/lassekongo83/UserStyles
 ! Description: A user style that restyles imgur.com. This one can be added to uBlock Origin.
@@ -59,10 +59,6 @@ imgur.com##a > div.point-info.gradient-transparent-black.transition:style(-webki
 imgur.com##.comment.expanded *>.children:style(border-left: 1px dashed #555 !important)
 imgur.com##form.caption-create:style(border-radius: 4px !important; border-width: 1px !important)
 imgur.com###captions > .usertext:style(border-radius: 4px !important)
-! imgur.com###captions > .usertext:before:style(display: none !important)
-! imgur.com##.children > form.caption-create:before:style(display: none !important)
-imgur.com###captions > .comment[data-level="0"]>.caption > .usertext
-imgur.com##div.usertext.cf::before
 imgur.com##.caption-gradient
 
 ! MISC
