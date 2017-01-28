@@ -23,6 +23,37 @@ imgur.com###side-gallery:style(margin-top: 50px !important)
 imgur.com##.post-options-fixed:style(top: 71px !important)
 
 ! COLORS
+
+! Dark
+imgur.com##form.caption-create:hover:style(background: #373a42 !important)
+imgur.com##.comment-create-reply:hover:style(background: #373a42 !important)
+imgur.com###upload-modal > #bottom-apps-container:style(background: #373a42 !important)
+imgur.com###upload-modal > .paste-url > #paste-url-input:style(background: #373a42 !important)
+imgur.com##form.caption-create:style(background: #373a42 !important)
+
+! Darker
+imgur.com##form.caption-create:style(background: #2b2d34 !important)
+imgur.com##.comment-create-reply:style(background: #2b2d34 !important)
+imgur.com##.comment-votes-wrapper:style(background: #2b2d34 !important)
+imgur.com##.post-header:style(background: #2b2d34 !important)
+imgur.com##.post-action:style(background: #2b2d34 !important)
+imgur.com##.post-description:style(background: #2b2d34 !important)
+imgur.com##.new-panel:style(background: #2b2d34 !important)
+imgur.com##.new-panel-header:style(background: #2b2d34 !important)
+imgur.com###topbar:style(background: #2b2d34 !important)
+imgur.com##.post-image-meta:style(background: #2b2d34 !important)
+imgur.com###outside-tagging-showhide:style(background: #2b2d34 !important)
+imgur.com###upload-modal:style(background: #2b2d34 !important)
+imgur.com##.blurbox > #cboxTopCenter:style(background: #2b2d34 !important)
+imgur.com##.AddExistingImage-buttonbar:style(background: #2b2d34 !important)
+imgur.com##.panel:style(background: #2b2d34 !important)
+
+! Darkest
+imgur.com###captions > .usertext:style(background: #202126 !important)
+imgur.com##.posts:style(background: #202126 !important)
+imgur.com##.AddExistingImage-images:style(background: #202126 !important)
+
+! Misc colors
 imgur.com##a.upload-button:style(color: #f2f2f2 !important)
 imgur.com##a.upload-button:hover:style(color: #f2f2f2 !important)
 imgur.com##a:link:style(color: #64B5F6 !important)
