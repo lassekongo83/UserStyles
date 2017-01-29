@@ -48,8 +48,8 @@ loading.se##span.vert_sep
 loading.se###header > .rgt:style(float: none !important; padding-left: 5px !important)
 
 ! Avataren i headern
-loading.se###header > .avatar:style(background-color: #477094 !important; border: none !important; border-radius: 2px !important)
-loading.se###header > .avatar > img:style(box-shadow: 0px 0px 3px black !important)
+loading.se###header > span.avatar:style(background-color: #477094 !important; border: none !important; border-radius: 2px !important)
+loading.se###header > span.avatar > img:style(box-shadow: 0px 0px 3px black !important)
 loading.se##.forum_thread_tbr > .avatar > img:style(width: 120px !important; height: 120px !important)
 ! Användarens header
 loading.se###user_header:style(background-image: none !important; margin-right: -14px !important; margin-left: -14px !important; background: linear-gradient(#052038, #08365F) !important)
@@ -208,3 +208,4 @@ loading.se##iframe[width="416"][height="312"]:style(width: 640px !important; hei
 loading.se##iframe[width="435"][height="357"]:style(width: 640px !important; height: 360px !important)
 loading.se##iframe.youtube-player:style(width: 640px !important; height: 360px !important)
 ||sifomedia.loading.se/RealMedia/
+||loading.se/images/magazines/*/level_Nytt_nummer*.jpg
