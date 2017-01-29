@@ -1,0 +1,208 @@
+! Title: Loading.se UserStyle
+! Expires: 30 days (update frequency)
+! Homepage: https://github.com/lassekongo83/UserStyles
+! Description: A user style that restyles loading.se. This one can be added to uBlock Origin.
+
+! Plockar bort en del grejer samt fixar bredden
+loading.se###site_wrapper:style(max-width: 998px !important; width: 998px !important)
+loading.se###main_col:style(max-width: 970px !important; width: 970px !important; padding-left: 7px !important)
+loading.se###sec_col
+loading.se###header_news
+loading.se###footer
+loading.se###fb-root
+loading.se##.theme_selector
+loading.se##.ox_zone
+! Färger o form
+||loading.se/gfx/static_gfx/site_bg.png
+loading.se##body:style(background-image: none !important; background-color: #e0e0e0 !important; font-family: arial, verdana, helvetica neue, helvetica, sans-serif !important; padding-top: 0 !important;)
+loading.se##*:style(text-shadow: none !important)
+loading.se###site_wrapper:style( background-color: #fafafa !important)
+loading.se###content:style( background-color: #fafafa !important)
+loading.se###main_col:style( background-color: #fafafa !important)
+loading.se###branding > img:style(max-height: 30px !important)
+loading.se##.forum_list:style(background: none !important; border: none !important)
+loading.se##.forum_threads_list:style(background: none !important; border: none !important)
+loading.se##tr[class="pagination"] > td[colspan="7"]:style(border-bottom: 1px solid #e0e0e0 !important)
+loading.se##.forum_forum_tbr_td:style(background: none !important; border: none !important)
+loading.se##.forum_cat_tbr:style(background: #fafafa !important; border: 1px solid #e8e8e8 !important; border-top: 0px !important)
+loading.se##.forum_forum_tbr:style(background: #fafafa !important; border: 1px solid #e8e8e8 !important; border-top: 0px !important)
+loading.se##.forum_cat_tbr.odd:style(background: #f5f5f5 !important; border-top: 1px solid #e0e0e0 !important)
+loading.se##.forum_forum_tbr.odd:style(background: #f5f5f5 !important; border-top: 1px solid #e0e0e0 !important)
+loading.se##.forum_thread_nav:style(border-bottom-width: 0 !important)
+loading.se##td[class="forum_forum_tbr_td thread_modified"][width="150"]:style(text-align: right !important; border-right: 1px solid #e0e0e0 !important)
+loading.se##.glued:style(background: #e0e0e0 !important; border: 1px solid #d8d8d8 !important; border-radius: 0 !important)
+! Byter ut ikonerna som talar om om tråden är läst citerad etc
+loading.se##img[src="/gfx/static_gfx/icon_pm_unread.png"]:style(height: 0 !important; width: 0 !important; padding-left: 12px !important; padding-top: 12px !important; background: linear-gradient(#849FC2, #6683B3) !important; border-radius: 18px !important)
+loading.se##img[src="/gfx/static_gfx/icon_pm_read.png"]:style(height: 0 !important; width: 0 !important; padding-left: 12px !important; padding-top: 12px !important; background: linear-gradient(#e2e2e2, #ccc) !important; border-radius: 18px !important)
+loading.se##img[src="/gfx/forum_allread_w.gif"]:style(height: 0 !important; width: 0 !important; padding-left: 8px !important; padding-top: 8px !important; background: linear-gradient(rgba(100,100,100,0.4), rgba(100,100,100,0.4)) !important; border-radius: 18px !important)
+loading.se##img[src="/gfx/forum_allread_q.gif"]:style(height: 0 !important; width: 0 !important; padding-left: 12px !important; padding-top: 12px !important; background: none !important; box-shadow:inset 0px 0px 0px 3px #ccc !important; border-radius: 18px !important)
+loading.se##img[src="/gfx/forum_unread_q.gif"]:style(height: 0 !important; width: 0 !important; padding-left: 12px !important; padding-top: 12px !important; background: none !important; box-shadow:inset 0px 0px 0px 3px #E2013D !important; border-radius: 18px !important)
+loading.se##img[src="/gfx/forum_unread_w.gif"]:style(height: 0 !important; width: 0 !important; padding-left: 8px !important; padding-top: 8px !important; background: linear-gradient(rgba(226,1,61,0.6), rgba(226,1,61,0.6)) !important; border-radius: 18px !important)
+! Fyller ut innehållet på andra sidor istället för bara på forumet
+loading.se##.main_left_col:style(width: 688px !important; background: none !important)
+! Rundar kanterna längst ner
+loading.se###site_wrapper:style(border-radius: 0px 0px 7px 7px !important; box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.1) !important)
+! Lite gradients och sånt
+loading.se###header:style(margin-top: 24px !important; background: linear-gradient(#477094, #0A4070) !important)
+loading.se###header > .vert_sep
+! Avataren i headern
+loading.se###header > .avatar:style(background-color: #477094 !important; border: none !important; border-radius: 2px !important)
+loading.se###header > .avatar > img:style(box-shadow: 0px 0px 3px black !important)
+loading.se##.forum_thread_tbr > .avatar > img:style(width: 120px !important; height: 120px !important)
+! Användarens header
+loading.se###user_header:style(background-image: none !important; margin-right: -14px !important; margin-left: -14px !important; background: linear-gradient(#052038, #08365F) !important)
+loading.se###user_header > .frame:style(background-color: #0A3E6D !important; border: none !important; border-radius: 4px !important)
+loading.se###user_header > .frame > .avatar:style(box-shadow: 0px 0px 3px #000 !important; border-color: rgba(0, 0, 0, 0.5) !important)
+loading.se###user_header > .meta > span:style(color: #8EB4D3 !important)
+! Den blåa menyn
+loading.se###site_navigation:style(position: fixed !important; top: 0 !important; height: 24px !important; width: 998px !important; z-index: 1000 !important; box-shadow: none !important; border-top: none !important; border-bottom: 1px solid rgba(0,0,0,0.4) !important; background: linear-gradient(#849FC2, #6683B3) !important)
+! färgen på blogg, quote, pm knapparna
+loading.se##.rgt > .pictos:style(color: #7B95AA !important)
+loading.se###site_navigation > ul.nav:style(height: 20px !important)
+loading.se###site_navigation > ul.nav > li:style(height: 20px !important)
+loading.se###site_navigation > ul.nav > li div.hit_area:style(top: 10px !important)
+loading.se###site_navigation > ul.nav > li > a:style(position: relative !important; top: -10px !important; height: 20px !important)
+loading.se###site_navigation > ul.nav > li > a:style(padding-top: 0 !important)
+loading.se##ul.nav.dd > li > span:style(padding-top: 0 !important)
+loading.se###site_navigation > div.repelled:style(position: relative !important; top: -8px !important)
+! Sub-menyn
+loading.se###site_navigation > ul.nav.sub:style(border-radius: 0px 0px 4px 4px !important; box-shadow: none !important; background-color: rgba(0, 0, 0, 0.9) !important)
+loading.se###site_navigation ul.nav.dd > li:hover > a:style(background-color: rgba(0, 0, 0, 0.9) !important; border-radius: 0px 0px 0px 0px !important; min-height: 24px !important; max-height: 24px !important)
+loading.se##ul.nav.dd > li:hover > span:style(background-color: rgba(0, 0, 0, 0.9) !important; border-radius: 0px 0px 0px 0px !important; min-height: 24px !important; max-height: 24px !important)
+! Flytta högerkolumnen på huvudsidan längre upp
+loading.se##.section_index > .main_right_col:style(top: 0px !important; right: 4px !important; position: absolute !important)
+! Sök grejen
+loading.se##.g_search:style(background: none !important; border: none !important; border-radius: 0px !important; max-height: 24px !important; margin-top: 19px !important; margin-left: 300px !important)
+loading.se##.g_search > input:style(max-height: 22px !important; border-radius: 2px !important; border: none !important; box-shadow: none !important; font: arial !important; font-weight: normal !important; margin-top: 2px !important; background-image: none !important; background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,1.0)) !important)
+loading.se##.g_search input:focus::-webkit-input-placeholder:style(opacity: 0 !important)
+loading.se##.g_search input:focus::-moz-placeholder:style(color:transparent !important)
+! Bort med prickikorven
+||loading.se/gfx/static_gfx/noise_bg.png
+! Den blåa lilla titeln vid högerkolumnen på huvudsidan bland annat
+loading.se##.related_box > h3:style(background-image: none !important; box-shadow: 0px 3px 5px #000 !important; border-radius: 4px !important; background: linear-gradient(#4CC1EF, #3CAEEA) !important)
+loading.se###main_col > .related_box > ul:style(padding-top: 3px !important)
+! quote delen
+loading.se##.forum_text_quote:style(background-color: #E0E0E0 !important; padding: 8px !important; border: 1px solid #CCCCCC !Important; background: linear-gradient(#E0E0E0, #DCDCDC) !important)
+loading.se##.quote:style(background-color: #E0E0E0 !important; padding: 8px !important; border: 1px solid #CCCCCC !Important; background: linear-gradient(#E0E0E0, #DCDCDC) !important)
+loading.se##.quote > p:style(font-style: normal !important; line-height: 16px !important; color: #333 !important; font-size: 11px !important)
+loading.se##.forum_text_quote > p:style(font-style: normal !important; line-height: 16px !important; color: #333 !important; font-size: 11px !important)
+loading.se##.forum_text_quote > .author:style(font-size: 12px !important; color: #222 !important)
+loading.se##.quote > .author:style(font-size: 12px !important; color: #222 !important)
+loading.se##.forum_text_quote > .author:hover:style(font-size: 12px !important; color: #222 !important)
+loading.se##.quote > .author:hover:style(font-size: 12px !important; color: #222 !important)
+loading.se##.quote > .quote_char:style(color: #ccc !important)
+loading.se##.forum_text_quote > .quote_char:style(color: #ccc !important)
+! Visar vilken forumdel vi är i
+loading.se##.forum_cat_sep:style(max-width: 986px !important; max-height: 34px !important; color: #fff !important; background: linear-gradient(#839EC1, #6582B2) !important; box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) !important; border: none !important; border-radius: 2px !important)
+loading.se##span.forum_cat_name:style(border-right: 1px solid rgba(97,123,163,0.5) !important)
+loading.se##.forum_bc_separator
+loading.se##.forum_cat_sep > a:hover:style(color: #71C6F0 !important)
+loading.se##.forum_cat_name:style(color: #fff !important; background: none !important)
+loading.se##.forum_cat_desc:style(color: #fff !important; background: none !important)
+loading.se##.forum_bc_separator:style(color: #fff !important; background: none !important)
+loading.se##.forum_cat_name > a:style(color: #fff !important; background: none !important)
+loading.se##.forum_cat_desc > a:style(color: #fff !important; background: none !important)
+loading.se##.forum_bc_separator > a:style(color: #fff !important; background: none !important)
+! Grejen som visar vilken tråd-layout vi valt
+loading.se##.forum_style_sel:style(background: none !important; border: none !important; color: #fff !important; max-height: 34px !important;)
+loading.se##.forum_style_sel.active:style(background: none !important; border: none !important; background: linear-gradient(rgba(97,123,163,0.2), rgba(97,123,163,0.7)) !important; box-shadow:inset 0px 0px 2px 0px rgba(0,0,0,0.2) !important)
+loading.se##span.icon.f_threads:style(background-repeat: no-repeat !important; background-position: center !important; -webkit-filter: contrast(619%) brightness(619%) !important; -moz-filter: contrast(619%) brightness(619%) !important)
+loading.se##span.icon.f_cats:style(background-repeat: no-repeat !important; background-position: center !important; -webkit-filter: contrast(619%) brightness(619%) !important; -moz-filter: contrast(619%) brightness(619%) !important)
+! Knappen Ny tråd i en tråd
+loading.se##a[id^="cat_id_"]:style(background: none !important; border: none !important; color: #fff !important)
+loading.se##a[id^="cat_id_"]:hover:style(background-color: rgba(255,255,255,0.1) !important; border: none !important; color: #fff !important)
+! trådtiteln längst upp
+loading.se##.forum_thread_info:style(background: #f2f2f2 !important; color: #999 !important)
+loading.se##.forum_thread_info > h3:style(color: #444 !important)
+loading.se##td[class="forum_thread_info"]:style(border-width: 1px 0 0 1px !important; border-style: solid !important; border-color: #e8e8e8 !important)
+loading.se##td[class="forum_thread_info"][align="right"]:style(border-width: 1px 1px 0 0 !important; border-style: solid !important; border-color: #e8e8e8 !important)
+! Knappar
+loading.se##.forum_cat_sep > .button:style(background: none !important; border-left: 1px solid #f0f0f0 !important; border-right: none !important; border-bottom: none !important; border-top: 1px solid #e8e8e8 !important; border-radius: 0px !important; box-shadow: none !important)
+loading.se##.forum_cat_sep > .button:hover:style(background: none !important; border-left: 1px solid #f0f0f0 !important; border-right: none !important; border-bottom: none !important; border-top: 1px solid #e8e8e8 !important; border-radius: 0px !important; box-shadow: none !important)
+loading.se##.button:style(border-radius: 3px !important; background-image: none !important; background: linear-gradient(#f7f7f7, #DCDCDC) !important; border-color: rgba(0,0,0,0.3) !important; box-shadow:inset 0px 1px 0px rgba(255,255,255,1.0), 0px 1px 2px rgba(0,0,0,0.2) !important)
+loading.se##.button.ok:style(color: #333 !important)
+loading.se##.button.no:style(color: #333 !important)
+loading.se##.button.ok:hover:style(color: #777 !important)
+loading.se##.button.no:hover:style(color: #777 !important)
+loading.se##.button:hover:style(border-radius: 3px !important; background-image: none !important; background: linear-gradient(#F5F5F5, #E8E8E8) !important; border-color: rgba(0,0,0,0.35) !important; box-shadow:inset 0px 1px 0px rgba(255,255,255,1.0), 0px 1px 2px rgba(0,0,0,0.3) !important)
+loading.se##.button:active:style(border-bottom-color: #CCCCCC !important; border-left-color: #AAAAAA !important; border-right-color: #AAAAAA !important; border-top-color: #888888 !important; box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.251), 0px 1px 0px #FFFFFF !important; background: linear-gradient(#DCDCDC, #f7f7f7) !important)
+! inloggningsknappen
+loading.se###header > #login_nav > ul.nav.dd > li > a:style(background-image: none !important; color: #fff !important; border: none !important; background-color: #7B95AA !important; background: linear-gradient(#8EB4D3, #7B95AA) !important; border-radius: 10px 10px 10px 10px !important)
+loading.se###header > #login_nav > ul.nav.dd > li > a:hover:style(background-color: #8BA8BF !important; background: linear-gradient(#9CC5E7, #8BA8BF) !important; border-radius: 10px 10px 10px 10px !important)
+! Hover effekter på länkar och dylikt
+loading.se##.forum_user_off:hover:style(color: #999999 !important)
+loading.se##.forum_user_on:hover:style(color: #FF66AA !important)
+loading.se##a.forum_forum_thread:hover:style(color: #888888 !important)
+loading.se##.forum_text_url:hover:style(color: #71C6F0 !important)
+loading.se##.forum_thread_tbr > .action_link:hover:style(color: #71C6F0 !important)
+loading.se##.action_link:hover:style(color: #71C6F0 !important)
+loading.se##.back > a:hover:style(color: #71C6F0 !important)
+loading.se##.author:hover:style(color: #71C6F0 !important)
+loading.se##h3 > a:hover:style(color: #71C6F0 !important)
+loading.se##.user_text_url:hover:style(color: #71C6F0 !important)
+loading.se##a[class="action_link"][href="#comment"]:hover:style(color: #71C6F0 !important)
+loading.se##.forum_thread_nav > a:style(color: #888 !important)
+loading.se##.forum_thread_nav > a:hover:style(color: #bbb !important)
+! Dold text ska vara tydligare samt visas när musen är över istället för att man ska behöva markera allt
+loading.se##.forum_text_hidden1:style(font-weight: bold !important; margin: 0 !important; color: #F02B2B !important)
+loading.se##span.forum_text_hidden2:hover:style(font-weight: normal !important; color: #fff !important)
+! Bredden på texten
+loading.se##.forum_thread_text:style(width: auto !important; max-width: 753px !important)
+! Fet text till länkar och lite andra fixar med fet-text och undertext. Måste kunna gör bättre men jag glömma hur.
+loading.se##.forum_thread_text > strong:style(font-weight: bold !important)
+loading.se##.forum_thread_text > u > strong:style(text-decoration: underline !important; font-weight: bold !important)
+loading.se##.forum_thread_text > u > strong > a:style(text-decoration: underline !important; font-weight: bold !important)
+loading.se##.forum_thread_text > strong > u:style(text-decoration: underline !important; font-weight: bold !important)
+loading.se##.forum_thread_text > strong > u > a:style(text-decoration: underline !important; font-weight: bold !important)
+loading.se##.forum_thread_text > u > a:style(text-decoration: underline !important)
+loading.se##.forum_thread_text > u:style(text-decoration: underline !important)
+! Text area (där man skriver sina inlägg)
+loading.se##.thread_reply.light > textarea:style(background-color: #f4f4f4 !important; border-color: #ccc !important; max-width: 618px !important; width: 618px !important; border-radius: 0px !important)
+loading.se##.lform > input[type="text"]:style(background-color: #f4f4f4 !important; border-color: #ccc !important; border-radius: 0px !important; font-family: arial, verdana, helvetica neue, helvetica, sans-serif !important)
+loading.se##.lform > input[type="password"]:style(background-color: #f4f4f4 !important; border-color: #ccc !important; border-radius: 0px !important; font-family: arial, verdana, helvetica neue, helvetica, sans-serif !important)
+loading.se##.lform > select:style(background-color: #f4f4f4 !important; border-color: #ccc !important; border-radius: 0px !important; font-family: arial, verdana, helvetica neue, helvetica, sans-serif !important)
+loading.se##.lform > textarea:style(background-color: #f4f4f4 !important; border-color: #ccc !important; border-radius: 0px !important; font-family: arial, verdana, helvetica neue, helvetica, sans-serif !important)
+loading.se##.lform:style(border-radius: 0px !important)
+loading.se##form[id="text"][class="lform"]:style(background-color: #f0f0f0 !important; border-color: #ccc !important)
+loading.se###forum_id:style(height: 27px !important; width: 220px !important)
+loading.se###subject:style(height: 24px !important; width: 500px !important; float: right !important)
+loading.se###message:style(min-width: 630px !important; border-radius: 0px !important; background: linear-gradient(#f0f0f0, #f8f8f8) !important; box-shadow:inset 0px 1px 2px 0px rgba(0,0,0,0.1) !important)
+! gör inläggen lite mer kompakta samt separerar avatar-delen med en border
+loading.se##td[class="forum_thread_tbr_td"][width="160"]:style(width: 160px !important; min-width: 160px !important; border-right: 1px dotted #ccc !important)
+loading.se##.forum_thread_tbr_td:style(max-width: 750px !important)
+loading.se##.section_forum > .forum_thread_nav:style(border-color: #ccc !important)
+loading.se##.forum_cat_tbr > td:style(border: none !important)
+loading.se##.forum_forum_tbr > td:style(border: none !important)
+loading.se##.forum_thread_tbr_foot > td:style(border: none !important)
+loading.se##.forum_thread_tbr > td:style(border: none !important)
+! Färger och grejs på inläggen
+loading.se##.forum_thread_list:style(border: 1px solid #e8e8e8 !important)
+loading.se##.forum_thread_tbr_foot.odd > .forum_thread_tbr_td:style(border-bottom: 1px solid #e8e8e8 !important)
+loading.se##.forum_thread_tbr_foot > .forum_thread_tbr_td:style(border-bottom: 1px solid #e8e8e8 !important)
+loading.se##.forum_thread_tbr > td:style(background: none !important)
+loading.se##.forum_thread_tbr_head > .forum_thread_tbr_td:style(background: #f2f2f2 !important)
+loading.se##.forum_thread_tbr_foot > .forum_thread_tbr_td:style(background: #f2f2f2 !important)
+loading.se##.forum_thread_tbr:style(background: #f2f2f2 !important)
+loading.se##.forum_thread_tbr_head.odd > .forum_thread_tbr_td:style(background: none !important)
+loading.se##.forum_thread_tbr_foot.odd > .forum_thread_tbr_td:style(background: none !important)
+loading.se##.forum_thread_tbr.odd:style(background: none !important)
+loading.se##.forum_thread_tbr_head.odd:style(background: none !important)
+loading.se##.forum_thread_tbr_td:style(background: none !important)
+! Spelgrannar
+loading.se##.match_bar_inner:style(background-image: none !important; background: linear-gradient(#C8E870, #9AD548) !important)
+! navigeringsknappar
+loading.se###user_nav > li > a:style(background-image: none !important; background: linear-gradient(#D5D5D5, #B0B0B0) !important)
+loading.se###user_nav > li > a:hover:style(background-image: none !important; background-color: #D5D5D5 !important)
+loading.se###user_nav > li.active > a:style(background-image: none !important; background-color: #f9f9f9 !important)
+loading.se###user_nav > li.active > a:hover:style(background-image: none !important; background-color: #f9f9f9 !important)
+! fyller ut bloggtexten lite mera
+loading.se##.blogg_text:style(width: 100% !important)
+loading.se##.list_item.comment_item:style(border: 1px solid #e8e8e8 !important)
+loading.se##.list_item:style(border-bottom: 0px !important)
+! Kod-rutor i <pre>
+loading.se##.forum_thread_text > pre:style(background-color: #e8e8e8 !important; border: 1px solid #ccc !important; padding: 12px !important)
+! Större YouTube videos
+loading.se##iframe[width="416"][height="312"]:style(width: 640px !important; height: 360px !important)
+loading.se##iframe[width="435"][height="357"]:style(width: 640px !important; height: 360px !important)
+loading.se##iframe.youtube-player:style(width: 640px !important; height: 360px !important)
+||sifomedia.loading.se/RealMedia/
