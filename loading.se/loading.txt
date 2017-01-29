@@ -44,7 +44,9 @@ loading.se##.main_left_col:style(width: 688px !important; background: none !impo
 loading.se###site_wrapper:style(border-radius: 0px 0px 7px 7px !important; box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.1) !important)
 ! Lite gradients och sånt
 loading.se###header:style(margin-top: 24px !important; background: linear-gradient(#477094, #0A4070) !important)
-loading.se###header > .vert_sep
+loading.se##span.vert_sep
+loading.se###header > .rgt:style(float: none !important; padding-left: 5px !important)
+
 ! Avataren i headern
 loading.se###header > .avatar:style(background-color: #477094 !important; border: none !important; border-radius: 2px !important)
 loading.se###header > .avatar > img:style(box-shadow: 0px 0px 3px black !important)
