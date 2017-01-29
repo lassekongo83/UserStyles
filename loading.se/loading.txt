@@ -111,8 +111,8 @@ loading.se##.forum_style_sel.active:style(background: none !important; border: n
 loading.se##span.icon.f_threads:style(background-repeat: no-repeat !important; background-position: center !important; -webkit-filter: contrast(619%) brightness(619%) !important; -moz-filter: contrast(619%) brightness(619%) !important)
 loading.se##span.icon.f_cats:style(background-repeat: no-repeat !important; background-position: center !important; -webkit-filter: contrast(619%) brightness(619%) !important; -moz-filter: contrast(619%) brightness(619%) !important)
 ! Knappen Ny tråd i en tråd
-loading.se##a[id^="cat_id_"]:style(background: none !important; border: none !important; color: #fff !important)
-loading.se##a[id^="cat_id_"]:hover:style(background-color: rgba(255,255,255,0.1) !important; border: none !important; color: #fff !important)
+loading.se##.button.ok.forum_add:style(background: none !important; border: none !important; color: #fff !important)
+loading.se##.button.ok.forum_add:hover:style(background-color: rgba(255,255,255,0.1) !important; border: none !important; color: #fff !important)
 ! trådtiteln längst upp
 loading.se##.forum_thread_info:style(background: #f2f2f2 !important; color: #999 !important)
 loading.se##.forum_thread_info > h3:style(color: #444 !important)
