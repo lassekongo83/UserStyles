@@ -1,0 +1,35 @@
+! Title: Sweclockers.com UserStyle
+! Expires: 30 days (update frequency)
+! Homepage: https://github.com/lassekongo83/UserStyles
+! Description: A user style that restyles sweclockers.com. This one can be added to uBlock Origin.
+
+||sweclockers.com/gfx/ext/monster/monsterBoxLogo.gif
+sweclockers.com##.fbShareButton
+sweclockers.com##.social_bookmarks
+sweclockers.com###fbLikeButton
+sweclockers.com###adblockBanner
+sweclockers.com###newsticker
+sweclockers.com###mainSide
+sweclockers.com##.sidemenu
+sweclockers.com##.ad
+sweclockers.com##.adForumSticker
+sweclockers.com###prisjaktThread
+sweclockers.com##.cdonspons
+sweclockers.com##.banner
+sweclockers.com##.prisjaktPopular
+sweclockers.com##.monsterSide
+sweclockers.com##html:style(font-family: Tahoma,Arial,Helvetica,"Segoe UI",Meiryo,sans-serif !important)
+sweclockers.com##h1:style(font-family: Tahoma,Arial,Helvetica,"Segoe UI",Meiryo,sans-serif !important)
+sweclockers.com##h2:style(font-family: Tahoma,Arial,Helvetica,"Segoe UI",Meiryo,sans-serif !important)
+sweclockers.com##h3:style(font-family: Tahoma,Arial,Helvetica,"Segoe UI",Meiryo,sans-serif !important)
+sweclockers.com##h4:style(font-family: Tahoma,Arial,Helvetica,"Segoe UI",Meiryo,sans-serif !important)
+sweclockers.com##h5:style(font-family: Tahoma,Arial,Helvetica,"Segoe UI",Meiryo,sans-serif !important)
+sweclockers.com##h6:style(font-family: Tahoma,Arial,Helvetica,"Segoe UI",Meiryo,sans-serif !important)
+! Bredd med mera
+sweclockers.com##.insiderColumn>.fixed
+sweclockers.com##.whiteBody:style(width: 100% !important)
+sweclockers.com##.inner:style(padding-right: 0 !important)
+sweclockers.com##.mainContent:style(width: 85% !important)
+! Inbäddade YouTube videos
+sweclockers.com##object[id*="youtube"]:style(width: 640px !important; height: 360px !important)
+sweclockers.com##iframe.youtube-player:style(width: 640px !important; height: 360px !important)
