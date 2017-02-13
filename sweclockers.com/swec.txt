@@ -18,6 +18,7 @@ sweclockers.com##.cdonspons
 sweclockers.com##.banner
 sweclockers.com##.prisjaktPopular
 sweclockers.com##.monsterSide
+sweclockers.com##.articleFooter:has(.pjTitle)
 sweclockers.com##html:style(font-family: Tahoma,Arial,Helvetica,"Segoe UI",Meiryo,sans-serif !important)
 sweclockers.com##h1:style(font-family: Tahoma,Arial,Helvetica,"Segoe UI",Meiryo,sans-serif !important)
 sweclockers.com##h2:style(font-family: Tahoma,Arial,Helvetica,"Segoe UI",Meiryo,sans-serif !important)
