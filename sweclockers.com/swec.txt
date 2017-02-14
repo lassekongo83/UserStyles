@@ -32,6 +32,7 @@ sweclockers.com##.insiderColumn>.fixed
 sweclockers.com##.whiteBody:style(width: 100% !important)
 sweclockers.com##.inner:style(padding-right: 0 !important)
 sweclockers.com##.mainContent:style(width: 85% !important)
+sweclockers.com##.commentsBubble:style(margin-right: 0 !important; margin-left: 0 !important)
 ! Inbäddade YouTube videos
 sweclockers.com##object[id*="youtube"]:style(width: 640px !important; height: 360px !important)
 sweclockers.com##iframe.youtube-player:style(width: 640px !important; height: 360px !important)
