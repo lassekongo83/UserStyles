@@ -99,3 +99,4 @@ imgur.com##.sg-item-title
 imgur.com###side-gallery > .content:style(height: 420px !important)
 imgur.com###side-gallery > .nano:style(height: 420px !important)
 imgur.com###side-gallery *> div.fade-out
+imgur.com##.post-action-tags-tag:style(background: none !important; border-radius: 0 !important)
