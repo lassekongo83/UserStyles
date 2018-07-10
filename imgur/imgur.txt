@@ -3,100 +3,11 @@
 ! Homepage: https://github.com/lassekongo83/UserStyles
 ! Description: A user style that restyles imgur.com. This one can be added to uBlock Origin.
 
-! ADS AND SHIT
-imgur.com###fullbleed-bg
-imgur.com###scroll-ad
-imgur.com##.imgur-ad
-imgur.com##.ad-text
-imgur.com##.advertisement
-imgur.com###mainads
-imgur.com##div[id*="div-gpt-ad-"]
-imgur.com###.top-tag
+! Blur downvoted posts
+imgur.com##a.downvote > .Post-item-media > img:style(filter: blur(10px) !important;)
 
-! POSITIONS
-imgur.com###topbar:style(position: fixed !important)
-imgur.com###content:style(padding-top: 50px !important)
-imgur.com###cta-container:style(padding-top: 50px !important)
-imgur.com###buttons:style(padding-top: 50px !important)
-imgur.com##.post-header:style(margin-top: 50px !important)
-imgur.com###side-gallery:style(margin-top: 50px !important)
-imgur.com##.post-options-fixed:style(top: 71px !important)
-
-! COLORS
-
-! Dark
-imgur.com##form.caption-create:hover:style(background: #373a42 !important)
-imgur.com##.comment-create-reply:hover:style(background: #373a42 !important)
-imgur.com###upload-modal > #bottom-apps-container:style(background: #373a42 !important)
-imgur.com###upload-modal > .paste-url > #paste-url-input:style(background: #373a42 !important)
-imgur.com##form.caption-create:style(background: #373a42 !important)
-
-! Darker
-imgur.com##form.caption-create:style(background: #2b2d34 !important)
-imgur.com##.comment-create-reply:style(background: #2b2d34 !important)
-imgur.com##.comment-votes-wrapper:style(background: #2b2d34 !important)
-imgur.com##.post-header:style(background: #2b2d34 !important)
-imgur.com##.post-action:style(background: #2b2d34 !important)
-imgur.com##.post-description:style(background: #2b2d34 !important)
-imgur.com##.new-panel:style(background: #2b2d34 !important)
-imgur.com##.new-panel-header:style(background: #2b2d34 !important)
-imgur.com###topbar:style(background: #2b2d34 !important)
-imgur.com##.post-image-meta:style(background: #2b2d34 !important)
-imgur.com###outside-tagging-showhide:style(background: #2b2d34 !important)
-imgur.com###upload-modal:style(background: #2b2d34 !important)
-imgur.com##.blurbox > #cboxTopCenter:style(background: #2b2d34 !important)
-imgur.com##.AddExistingImage-buttonbar:style(background: #2b2d34 !important)
-imgur.com##.panel:style(background: #2b2d34 !important)
-
-! Darkest
-imgur.com###captions > .usertext:style(background: #202126 !important)
-imgur.com##.posts:style(background: #202126 !important)
-imgur.com##.AddExistingImage-images:style(background: #202126 !important)
-
-! Misc colors
-imgur.com##a.upload-button:style(color: #f2f2f2 !important)
-imgur.com##a.upload-button:hover:style(color: #f2f2f2 !important)
-imgur.com##a:link:style(color: #64B5F6 !important)
-imgur.com##a > strong:style(color: #64B5F6 !important)
-imgur.com##a:active:style(color: #64B5F6 !important)
-imgur.com##a:visited:style(color: #64B5F6 !important)
-
-imgur.com##a:link:hover:style(color: #90CAF9 !important; text-decoration: none !important)
-imgur.com##a:active:hover:style(color: #90CAF9 !important; text-decoration: none !important)
-imgur.com##a:visited:hover:style(color: #90CAF9 !important; text-decoration: none !important)
-
-imgur.com##div.pointer.arrow-up.icon-upvote-outline:hover:style(color: #39c442 !important)
-imgur.com##div.pointer.arrow-down.icon-downvote-outline:hover:style(color: #c43838 !important)
-imgur.com##button.comment-vote.icon-upvote-fill:hover:style(color: #39c442 !important)
-imgur.com##button.comment-vote.icon-downvote-fill:hover:style(color: #c43838 !important)
-imgur.com##button.post-action-icon.post-action-upvote.icon-upvote-outline:hover:style(color: #39c442 !important)
-imgur.com##button.post-action-icon.post-action-downvote.icon-downvote-outline:hover:style(color: #c43838 !important)
-imgur.com##button.post-action-icon.post-action-favorite.icon-favorite-outline:hover:style(color: #39c442 !important)
-
-! EXPERIENCE
-imgur.com##div[class="post red"] > a > img:style(filter: blur(10px) !important)
-imgur.com##div[class="post red"] > a > img:style(-moz-filter: blur(10px) !important)
-imgur.com##div[class="post red"] > a > img:style(-webkit-filter: blur(10px) !important)
-
-imgur.com##a > div.gradient-black-transparent.transition:style(transition: none !important)
-imgur.com##a > div.gradient-black-transparent.transition:style(-moz-transition: none !important)
-imgur.com##a > div.gradient-black-transparent.transition:style(-webkit-transition: none !important)
-imgur.com##a > div.point-info.gradient-transparent-black.transition:style(transition: none !important)
-imgur.com##a > div.point-info.gradient-transparent-black.transition:style(-moz-transition: none !important)
-imgur.com##a > div.point-info.gradient-transparent-black.transition:style(-webkit-transition: none !important)
-
-! COMMENTS
-
-imgur.com##.comment.expanded *>.children:style(border-left: 1px dashed #555 !important)
-imgur.com##form.caption-create:style(border-radius: 4px !important; border-width: 1px !important)
-imgur.com###captions > .usertext:style(border-radius: 4px !important)
+! Comment section
+imgur.com##.comment.expanded *>.children:style(border-left: 1px dashed #555 !important;)
+imgur.com##form.caption-create:style(border-radius: 4px !important; border-width: 1px !important;)
+imgur.com###captions > .usertext:style(border-radius: 4px !important;)
 imgur.com##.caption-gradient
-
-! MISC
-imgur.com##.nano>.pane>.slider:style(background: rgba(255,255,255,.5) !important)
-imgur.com###side-gallery > .fade-out
-imgur.com##.sg-item-title
-imgur.com###side-gallery > .content:style(height: 420px !important)
-imgur.com###side-gallery > .nano:style(height: 420px !important)
-imgur.com###side-gallery *> div.fade-out
-imgur.com##.post-action-tags-tag:style(background: none !important; border-radius: 0 !important)
