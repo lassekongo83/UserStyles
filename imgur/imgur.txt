@@ -5,6 +5,7 @@
 
 ! Blur downvoted posts
 imgur.com##a.downvote > .Post-item-media > img:style(filter: blur(10px) !important;)
+imgur.com##a.downvote > .Post-item-media > video:style(filter: blur(10px) !important;)
 
 ! Comment section
 imgur.com##.comment.expanded *>.children:style(border-left: 1px dashed #555 !important;)
