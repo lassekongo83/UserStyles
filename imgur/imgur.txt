@@ -17,3 +17,4 @@ imgur.com##.comment.expanded *>.children:style(border-left: 1px dashed #555 !imp
 imgur.com##form.caption-create:style(border-radius: 4px !important; border-width: 1px !important;)
 imgur.com###captions > .usertext:style(border-radius: 4px !important;)
 imgur.com##.caption-gradient
+imgur.com###content:style(margin-top: 80px !important;)
