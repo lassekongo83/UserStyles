@@ -24,6 +24,7 @@ loading.se##.PostItem-date:style(font-size: 11px !important; padding-bottom: 5px
 loading.se##.Picture-hack, img[alt="play-pause-bubble-icon"]:style(width: 120px !important; height: 120px !important; background-color: #e6e6e6 !important; border: 5px solid #e6e6e6 !important;)
 loading.se##.PostItem-portrait-container:style(margin: 10px !important;)
 loading.se##.PostItem-username:style(color: #ef4793 !important; font-size: 11px !important; font-weight: bold;)
+loading.se##.PostList-boxlink-active, .PostList-boxlink:hover:style(background-color: #393939 !important;)
 ! Lägg till en * efter datumet på redigerade inlägg
 loading.se##.PostItem-date > div[title^="Redigerat"]:after:style(content: "*" !important;)
 
