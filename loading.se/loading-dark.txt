@@ -1,0 +1,52 @@
+! Title: Loading.se Dark UserStyle
+! Expires: 7 days (update frequency)
+! Homepage: https://github.com/lassekongo83/UserStyles
+! Description: A dark theme for loading.se. This one can be added to uBlock Origin.
+
+loading.se##.App:style(box-shadow: 0 0 5px 2px rgba(0,0,0,0.3) !important; background-color: #fff !important; max-width: 998px !important; margin: 0 auto !important; border-radius: 0 0 8px 8px !important; margin-bottom: 20px !important;)
+loading.se##.Header:style(max-width: 998px !important; margin: 0 auto !important; padding: 0 !important;)
+loading.se##.Header-logo:style(padding-left: 20px !important;)
+loading.se##.Header-nav:style(padding-right: 20px !important;)
+
+! Färger
+loading.se##body, .CodeMirror, input, .PostList-boxlink:style(background-color: #1a1a1d !important;)
+loading.se##.Games-container, .Post-container, .App:style(background-color: #3e3e45 !important;)
+loading.se##.CodeMirror, .Row-title, .Games-info, .editor-toolbar a, input, .PostList-boxlink, .Games-container, .Post-container, .App:style(color: #f1f1f3 !important;)
+loading.se##.CodeMirror-cursor:style(border-color: #f1f1f3 !important;)
+loading.se##.Row-creation-text, .PostItem-date, .Row-latest-post-text:style(color: #94949f !important;)
+loading.se##.CodeMirror, .editor-toolbar, input:style(border-color: #565660 !important;)
+loading.se##.PostItem-container, .Row-links-container:style(box-shadow: inset 0 -1px #565660 !important;)
+loading.se##.PostItem-user:style(border-right: 1px solid #565660 !important;)
+loading.se##.PostList-boxlink-active, .PostList-boxlink:hover:style(background-color: #ef4793 !important;)
+loading.se##.Header, .PostItem-container:nth-child(odd), .Row-links-container:nth-child(odd), .Home-link-wrapper:style(background-color: #323238 !important;)
+loading.se##.PostItem-container:nth-child(even), .Row-links-container:nth-child(even), .List-container:style(background-color: #3e3e45 !important;)
+!loading.se##.Icon:style(filter: invert(1) sepia(1) saturate(3) hue-rotate(175deg) brightness(65%) !important;)
+
+! Inlägg
+loading.se##.Boop-container:style(background-color: #fd2860 !important; margin-left: 0 !important; color: #fff !important; font-size: 25px !important; padding: 15px !important;)
+loading.se##.Boop-mini:style(font-size: 11px !important;)
+loading.se##.Post-container:style(max-width: 100% !important;)
+loading.se##.PostItem-user:style(width: 150px !important; margin: 20px 0 20px 0 !important;)
+loading.se##.PostItem-container:style(padding-top: 2px !important; padding-bottom: 2px !important;)
+loading.se##.PostItem-body:style(margin: 20px 0 20px 0 !important;)
+loading.se##.PostItem-text:style(background: none !important; font-size: 1em !important; padding: 4px 12px 4px 15px !important;)
+loading.se##.PostItem-text a:style(text-decoration: none !important;)
+loading.se##.PostItem-text a:hover:style(color: #ef4793 !important;)
+loading.se##.PostItem-date:style(font-size: 11px !important; padding-bottom: 5px !important; text-align: right !important; display: initial !important;)
+loading.se##.Picture-hack, img[alt="play-pause-bubble-icon"]:style(width: 120px !important; height: 120px !important; background-color: #e6e6e6 !important; border: 5px solid #e6e6e6 !important;)
+loading.se##.PostItem-portrait-container:style(margin: 10px !important;)
+loading.se##.PostItem-username:style(color: #ef4793 !important; font-size: 11px !important; font-weight: bold;)
+! Lägg till en * efter datumet på redigerade inlägg
+loading.se##.PostItem-date > div[title^="Redigerat"]:after:style(content: "*" !important;)
+! Förstora bilder
+loading.se##.PostItem-text p img:style(max-height: initial !important; margin-top: 8px !important; margin-bottom: 8px !important;)
+
+! Trådar
+loading.se##.Games-title:style(margin: 0 !important;)
+loading.se##.Row-links-container:nth-child(even):style(background-color: #3e3e45 !important; color: #f1f1f3 !important;)
+loading.se##.Row-links-container:nth-child(odd):style(background-color: #323238 !important; color: #f1f1f3 !important;)
+loading.se##.Row-white-container, .Row-bubble-container:style(background: none !important;)
+loading.se##.Row-title:hover:style(color: #ef4793 !important;)
+loading.se##.Row-title:style(font-size: 13px !important; font-weight: bold !important; line-height: 1.2 !important;)
+loading.se##.Row-creation-text:style(font-size: 11px !important; line-height: 1.4 !important;)
+loading.se##.Row-forum-container:style(margin-bottom: 0 !important;)
