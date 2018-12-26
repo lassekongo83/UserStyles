@@ -3,7 +3,7 @@
 ! Homepage: https://github.com/lassekongo83/UserStyles
 ! Description: A dark theme for loading.se. This one can be added to uBlock Origin.
 
-loading.se##.App:style(box-shadow: 0 0 5px 2px rgba(0,0,0,0.3) !important; background-color: #fff !important; max-width: 998px !important; margin: 0 auto !important; border-radius: 0 0 8px 8px !important; margin-bottom: 20px !important;)
+loading.se##.App:style(box-shadow: 0 0 5px 2px rgba(0,0,0,0.3) !important; max-width: 998px !important; margin: 0 auto !important; border-radius: 0 0 8px 8px !important; margin-bottom: 20px !important;)
 loading.se##.Header:style(max-width: 998px !important; margin: 0 auto !important; padding: 0 !important;)
 loading.se##.Header-logo:style(padding-left: 20px !important;)
 loading.se##.Header-nav:style(padding-right: 20px !important;)
