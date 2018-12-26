@@ -27,7 +27,7 @@ loading.se##.editor-toolbar a:hover:style(background-color: #656570 !important; 
 
 ! Länkar
 loading.se##.PostItem-text a:style(text-decoration: none !important; color: #88b8d1 !important;)
-loading.se##.PostItem-text a:hover, .Row-text:hover:style(color: #ef4793 !important;)
+loading.se##.PostItem-text a:hover, .Row-text:hover, .Row-title:hover:style(color: #ef4793 !important;)
 loading.se##.Row-text:style(color: #88b8d1 !important;)
 
 ! Inlägg
@@ -49,10 +49,7 @@ loading.se##.PostItem-text p img:style(max-height: initial !important; margin-to
 
 ! Trådar
 loading.se##.Games-title:style(margin: 0 !important;)
-loading.se##.Row-links-container:nth-child(even):style(background-color: #3e3e45 !important; color: #f1f1f3 !important;)
-loading.se##.Row-links-container:nth-child(odd):style(background-color: #323238 !important; color: #f1f1f3 !important;)
 loading.se##.Row-white-container, .Row-bubble-container:style(background: none !important;)
-loading.se##.Row-title:hover:style(color: #ef4793 !important;)
 loading.se##.Row-title:style(font-size: 13px !important; font-weight: bold !important; line-height: 1.2 !important;)
 loading.se##.Row-creation-text:style(font-size: 11px !important; line-height: 1.4 !important;)
 loading.se##.Row-forum-container:style(margin-bottom: 0 !important;)
