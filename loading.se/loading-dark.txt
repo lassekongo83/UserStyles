@@ -3,53 +3,55 @@
 ! Homepage: https://github.com/lassekongo83/UserStyles
 ! Description: A dark theme for loading.se. This one can be added to uBlock Origin.
 
+! Bakgrundsfärgen #1a1b23
+loading.se##body, .CodeMirror, input:style(background-color: #1a1b23 !important;)
+! Förgrundsfärgen #f1f1f3
+loading.se##.CodeMirror, .Row-title, .Games-info, .editor-toolbar a, input, .PostList-boxlink, .Games-container, .Post-container, .App, .Boop-container:style(color: #f1f1f3 !important;)
+! Sekundär förgrund #c5c8c6
+loading.se##.Row-creation-text, .PostItem-date, .Row-latest-post-text, .Boop-mini:style(color: #c5c8c6 !important;)
+loading.se##.CodeMirror-cursor:style(border-color: #c5c8c6 !important;)
+! Sekundär bg färg #282c34
+loading.se##.Header, .Games-container, .PostItem-container:nth-child(odd), .Row-links-container:nth-child(odd), .Home-link-wrapper:style(background-color: #282c34 !important;)
+loading.se##.Games-title, .inlagg button, .Boop-container:style(background-color: #282c34 !important;)
+! Sekundär bg färg 2 # #23272e
+loading.se##.Post-container, .App, .PostItem-container:nth-child(even), .Row-links-container:nth-child(even), .List-container:style(background-color: #23272e !important;)
+! Border #3a3d43
+loading.se##.CodeMirror, .editor-toolbar, input, .editor-toolbar:style(border-color: #3a3d43 !important;)
+loading.se##.PostItem-container, .Row-links-container:style(box-shadow: inset 0 -1px #3a3d43 !important;)
+loading.se##.PostItem-user:style(border-right: 1px solid #3a3d43 !important;)
+! Länkfärg #fd2860
+loading.se##.PostItem-text a:style(text-decoration: none !important; color: #fd2860 !important;)
+! Länk hover #ff7398
+loading.se##.PostItem-text a:hover, .Row-text:hover, .Row-title:hover, .Row-number:hover:style(color: #ff7398 !important;)
+! Text selection
+loading.se##span.CodeMirror-selectedtext:style(background: #fd2860 !important;)
+loading.se##a.PostList-boxlink-active, a.PostList-boxlink:hover:style(background: #fd2860 !important;)
+! transparent
+loading.se##.Row-white-container, .Row-bubble-container, .PostItem-text, .PostList-boxlink:style(background: none !important;)
+
+! Former och typsnitt
 loading.se##.App:style(box-shadow: 0 0 5px 2px rgba(0,0,0,0.3) !important; max-width: 998px !important; margin: 0 auto !important; border-radius: 0 0 8px 8px !important; margin-bottom: 20px !important;)
 loading.se##.Header:style(max-width: 998px !important; margin: 0 auto !important; padding: 0 !important;)
 loading.se##.Header-logo:style(padding-left: 20px !important;)
 loading.se##.Header-nav:style(padding-right: 20px !important;)
-
-! Färger
-loading.se##body, .CodeMirror, input, .PostList-boxlink:style(background-color: #1a1a1d !important;)
-loading.se##.Games-container, .Post-container, .App:style(background-color: #323238 !important;)
-loading.se##.CodeMirror, .Row-title, .Games-info, .editor-toolbar a, input, .PostList-boxlink, .Games-container, .Post-container, .App:style(color: #f1f1f3 !important;)
-loading.se##.CodeMirror-cursor:style(border-color: #f1f1f3 !important;)
-loading.se##.Row-creation-text, .PostItem-date, .Row-latest-post-text:style(color: #94949f !important;)
-loading.se##.CodeMirror, .editor-toolbar, input, .editor-toolbar:style(border-color: #4b4b53 !important;)
-loading.se##.PostItem-container, .Row-links-container:style(box-shadow: inset 0 -1px #4b4b53 !important;)
-loading.se##.PostItem-user:style(border-right: 1px solid #4b4b53 !important;)
-loading.se##.PostList-boxlink-active, .PostList-boxlink:hover:style(background-color: #ef4793 !important;)
-loading.se##.Header, .PostItem-container:nth-child(odd), .Row-links-container:nth-child(odd), .Home-link-wrapper:style(background-color: #323238 !important;)
-loading.se##.PostItem-container:nth-child(even), .Row-links-container:nth-child(even), .List-container:style(background-color: #3e3e45 !important;)
-loading.se##.Icon:style(filter: invert(1) sepia(1) saturate(1) hue-rotate(155deg) brightness(65%) !important;)
-loading.se##.Games-title, .inlagg button, .Post-reply button, .Boop-container:style(background-color: #4b4b53 !important;)
-loading.se##.inlagg button:hover, .Post-reply button:hover:style(background-color: #656570 !important;)
-loading.se##.editor-toolbar a:hover:style(background-color: #656570 !important; border-color: #4b4b53 !important;)
-
-! Länkar
-loading.se##.PostItem-text a:style(text-decoration: none !important; color: #88b8d1 !important;)
-loading.se##.PostItem-text a:hover, .Row-text:hover, .Row-title:hover:style(color: #ef4793 !important;)
-loading.se##.Row-text:style(color: #88b8d1 !important;)
-
-! Inlägg
-loading.se##.Boop-container:style(margin-left: 0 !important; color: #fff !important; font-size: 25px !important; padding: 15px !important;)
-loading.se##.Boop-mini:style(font-size: 11px !important;)
+loading.se##.Boop-container:style(margin-left: 0 !important; font-size: 25px !important; padding: 15px !important;)
+loading.se##.Boop-mini:style(font-size: 12px !important;)
 loading.se##.Post-container:style(max-width: 100% !important;)
 loading.se##.PostItem-user:style(width: 150px !important; margin: 20px 0 20px 0 !important;)
 loading.se##.PostItem-container:style(padding-top: 2px !important; padding-bottom: 2px !important;)
 loading.se##.PostItem-body:style(margin: 20px 0 20px 0 !important;)
 loading.se##.PostItem-text:style(background: none !important; font-size: 1em !important; padding: 4px 12px 4px 15px !important;)
-loading.se##.PostItem-date:style(font-size: 11px !important; padding-bottom: 5px !important; text-align: right !important; display: initial !important;)
-loading.se##.Picture-hack, img[alt="play-pause-bubble-icon"]:style(width: 120px !important; height: 120px !important; background-color: #323238 !important; border: 5px solid #4b4b53 !important;)
+loading.se##.PostItem-date:style(font-size: 12px !important; padding-bottom: 5px !important; text-align: right !important; display: initial !important;)
+loading.se##.Picture-hack, img[alt="play-pause-bubble-icon"]:style(width: 120px !important; height: 120px !important; background-color: #1a1b23 !important; border: 5px solid #3a3d43 !important;)
 loading.se##.PostItem-portrait-container:style(margin: 10px !important;)
-loading.se##.PostItem-username:style(color: #ef4793 !important; font-size: 11px !important; font-weight: bold;)
+loading.se##.PostItem-username:style(font-size: 12px !important; font-weight: bold;)
 ! Lägg till en * efter datumet på redigerade inlägg
-loading.se##.PostItem-date > div[title^="Redigerat"]:after:style(content: "*" !important;)
+loading.se##.PostItem-date > div[title^="Redigerat"]:before:style(content: "*" !important;)
 ! Förstora bilder
 loading.se##.PostItem-text p img:style(max-height: initial !important; margin-top: 8px !important; margin-bottom: 8px !important;)
 
-! Trådar
+! Trådvy
 loading.se##.Games-title:style(margin: 0 !important;)
-loading.se##.Row-white-container, .Row-bubble-container:style(background: none !important;)
-loading.se##.Row-title:style(font-size: 13px !important; font-weight: bold !important; line-height: 1.2 !important;)
-loading.se##.Row-creation-text:style(font-size: 11px !important; line-height: 1.4 !important;)
+loading.se##.Row-title:style(font-size: 14px !important; font-weight: bold !important; line-height: 1.2 !important;)
+loading.se##.Row-creation-text:style(font-size: 12px !important; line-height: 1.4 !important;)
 loading.se##.Row-forum-container:style(margin-bottom: 0 !important;)
