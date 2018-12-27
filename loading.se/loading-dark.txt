@@ -3,31 +3,36 @@
 ! Homepage: https://github.com/lassekongo83/UserStyles
 ! Description: A dark theme for loading.se. This one can be added to uBlock Origin.
 
-! Bakgrundsfärgen #1a1b23
+loading.se##.custom-loadingkalendern-note
+
+! Bakgrundsfärg
 loading.se##body, .CodeMirror, input:style(background-color: #1a1b23 !important;)
-! Förgrundsfärgen #f1f1f3
+! Förgrundsfärg
 loading.se##.CodeMirror, .Row-title, .Games-info, .editor-toolbar a, input, .PostList-boxlink, .Games-container, .Post-container, .App, .Boop-container:style(color: #f1f1f3 !important;)
-! Sekundär förgrund #c5c8c6
+! Sekundär förgrund
 loading.se##.Row-creation-text, .PostItem-date, .Row-latest-post-text, .Boop-mini:style(color: #c5c8c6 !important;)
 loading.se##.CodeMirror-cursor:style(border-color: #c5c8c6 !important;)
-! Sekundär bg färg #282c34
-loading.se##.Header, .Games-container, .PostItem-container:nth-child(odd), .Row-links-container:nth-child(odd), .Home-link-wrapper:style(background-color: #282c34 !important;)
-loading.se##.Games-title, .inlagg button, .Boop-container:style(background-color: #282c34 !important;)
-! Sekundär bg färg 2 # #23272e
-loading.se##.Post-container, .App, .PostItem-container:nth-child(even), .Row-links-container:nth-child(even), .List-container:style(background-color: #23272e !important;)
+! Bg färger
+loading.se##.Games-title, .inlagg button, .Boop-container, .Games-container, .PostItem-container:nth-child(odd), .Row-links-container:nth-child(odd), .Home-link-wrapper:style(background-color: #282c34 !important;)
+loading.se##.Header, .Post-container, .App, .PostItem-container:nth-child(even), .Row-links-container:nth-child(even), .List-container:style(background-color: #23272e !important;)
 ! Border #3a3d43
 loading.se##.CodeMirror, .editor-toolbar, input, .editor-toolbar:style(border-color: #3a3d43 !important;)
 loading.se##.PostItem-container, .Row-links-container:style(box-shadow: inset 0 -1px #3a3d43 !important;)
 loading.se##.PostItem-user:style(border-right: 1px solid #3a3d43 !important;)
-! Länkfärg #fd2860
-loading.se##.PostItem-text a:style(text-decoration: none !important; color: #fd2860 !important;)
-! Länk hover #ff7398
-loading.se##.PostItem-text a:hover, .Row-text:hover, .Row-title:hover, .Row-number:hover:style(color: #ff7398 !important;)
+! Länkfärg
+loading.se##.PostItem-text a, .Row-text, .Row-number:style(text-decoration: none !important; color: #3192ff !important;)
+loading.se##.PostItem-text a:hover, .Row-text:hover, .Row-title:hover, .Row-number:hover:style(color: #50bbff !important;)
+loading.se##span.CodeMirror-selectedtext:style(background: #3192ff !important;)
+loading.se##a.PostList-boxlink-active, .inlagg button, .Post-reply button, a.PostList-boxlink:hover:style(background: #3192ff !important;)
 ! Text selection
 loading.se##span.CodeMirror-selectedtext:style(background: #fd2860 !important;)
 loading.se##a.PostList-boxlink-active, a.PostList-boxlink:hover:style(background: #fd2860 !important;)
 ! transparent
 loading.se##.Row-white-container, .Row-bubble-container, .PostItem-text, .PostList-boxlink:style(background: none !important;)
+! Ikoner och bilder
+loading.se##img[src="https://i.imgur.com/RE2YtkV.png"], img[src="https://i.imgur.com/m8I3ElB.png"], .Icon:style(filter: sepia(1) saturate(5) hue-rotate(175deg) brightness(65%) !important;)
+loading.se##img[alt="play-pause-bubble-icon"]:style(filter: none !important;)
+loading.se##.Header-icon-link > img:style(filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg) !important;)
 
 ! Former och typsnitt
 loading.se##.App:style(box-shadow: 0 0 5px 2px rgba(0,0,0,0.3) !important; max-width: 998px !important; margin: 0 auto !important; border-radius: 0 0 8px 8px !important; margin-bottom: 20px !important;)
