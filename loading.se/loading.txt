@@ -27,7 +27,7 @@ loading.se##.PostItem-user:style(border-right: 1px solid #c9c9c9 !important;)
 loading.se##.PostItem-text a, .Row-text, .Row-number:style(text-decoration: none !important; color: #3192ff !important;)
 loading.se##.PostItem-text a:hover, .Row-text:hover, .Row-title:hover, .Row-number:hover:style(color: #50bbff !important;)
 loading.se##span.CodeMirror-selectedtext:style(background: #3192ff !important;)
-loading.se##.inlagg button, .Post-reply button, .PostList-boxlink-active, .PostList-boxlink:hover:style(background: #3192ff !important;)
+loading.se##.inlagg button, .Post-reply button, .PostList-boxlink-active, a.PostList-boxlink-active, .PostList-boxlink:hover:style(background-color: #3192ff !important;)
 ! Transparent
 loading.se##.Row-white-container, .Row-bubble-container, .PostItem-text:style(background: none !important;)
 ! Ikoner och bilder
