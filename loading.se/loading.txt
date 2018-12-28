@@ -29,7 +29,7 @@ loading.se##.PostItem-text a:hover, .Row-text:hover, .Row-title:hover, .Row-numb
 loading.se##span.CodeMirror-selectedtext:style(background: #3192ff !important;)
 loading.se##.inlagg button, .Post-reply button, .PostList-boxlink-active, a.PostList-boxlink-active, .PostList-boxlink:hover:style(background-color: #3192ff !important;)
 ! Transparent
-loading.se##.Row-white-container, .Row-bubble-container, .PostItem-text:style(background: none !important;)
+loading.se##.Row-white-container, .Row-bubble-container, .PostItem-text, .PostList-boxlink:style(background: none !important;)
 ! Ikoner och bilder
 loading.se##img[src="https://i.imgur.com/RE2YtkV.png"], img[src="https://i.imgur.com/m8I3ElB.png"], .Icon:style(filter: sepia(1) saturate(5) hue-rotate(175deg) !important;)
 loading.se##img[alt="play-pause-bubble-icon"]:style(filter: none !important;)
