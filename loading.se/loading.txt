@@ -9,7 +9,7 @@ loading.se##.custom-loadingkalendern-note
 loading.se##body:style(background-color: #777 !important;)
 ! Förgrundsfärg
 loading.se##.CodeMirror, .Row-title, .Games-info, .editor-toolbar a, input, .Games-container, .Post-container, .App, .List-text:style(color: #2c2c2c !important;)
-loading.se##.Boop-container, .Boop-mini *> .PostList-boxlink:style(color: #fff !important;)
+loading.se##.Boop-container:style(color: #fff !important;)
 loading.se##.Boop-mini:style(color: #ccc !important;)
 ! Sekundär förgrund
 loading.se##.Row-creation-text, .PostItem-date, .Row-latest-post-text:style(color: #888 !important;)
@@ -29,7 +29,7 @@ loading.se##.PostItem-text a:hover, .Row-text:hover, .Row-title:hover, .Row-numb
 loading.se##span.CodeMirror-selectedtext:style(background: #3192ff !important;)
 loading.se##.inlagg button, .Post-reply button, .PostList-boxlink-active, a.PostList-boxlink-active, .PostList-boxlink:hover:style(background-color: #3192ff !important;)
 ! Transparent
-loading.se##.Row-white-container, .Row-bubble-container, .PostItem-text, .PostList-boxlink:style(background: none !important;)
+loading.se##.Row-white-container, .Row-bubble-container, .PostItem-text:style(background: none !important;)
 ! Ikoner och bilder
 loading.se##img[src="https://i.imgur.com/RE2YtkV.png"], img[src="https://i.imgur.com/m8I3ElB.png"], .Icon:style(filter: sepia(1) saturate(5) hue-rotate(175deg) !important;)
 loading.se##img[alt="play-pause-bubble-icon"]:style(filter: none !important;)
