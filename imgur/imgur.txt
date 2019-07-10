@@ -7,7 +7,7 @@ imgur.com##.Post-item-title:style(font-family: "Gill Sans", Segoe UI, sans-serif
 
 ! Blur downvoted posts
 imgur.com##a.downvote > .Post-item-media > img:style(filter: blur(10px) !important;)
-imgur.com##a.downvote > .Post-item-media > video:style(filter: blur(10px) !important;)
+imgur.com##a.downvote > .Post-item-media *> video:style(filter: blur(10px) !important;)
 
 ! Comment and post section
 imgur.com###topbar:style(position: fixed !important;)
