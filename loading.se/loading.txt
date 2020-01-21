@@ -61,3 +61,5 @@ loading.se##.Games-title:style(margin: 0 !important;)
 loading.se##.Row-title:style(font-size: 14px !important; font-weight: bold !important; line-height: 1.2 !important;)
 loading.se##.Row-creation-text:style(font-size: 12px !important; line-height: 1.4 !important;)
 loading.se##.Row-forum-container:style(margin-bottom: 0 !important;)
+
+loading.se##.PostItem-body:style(background-color: transparent !important;)
