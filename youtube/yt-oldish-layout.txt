@@ -5,6 +5,12 @@
 ! This style can be added to uBlock Origin.
 
 ! This is currently a WIP. May break stuff!
+! masthead
+youtube.com###container.ytd-masthead:style(height: 49px !important;)
+youtube.com###page-manager.ytd-app:style(margin-top: 50px !important; --ytd-toolbar-offset: 50px !important;)
+! mini-guide/app-drawer
+youtube.com##app-drawer:style(top: -126px !important; border-right: 1px solid #e8e8e8 !important;)
+youtube.com##ytd-mini-guide-renderer.ytd-app:style(top: 50px !important; border-right: 1px solid #e8e8e8 !important;)
 ! thumbs
 youtube.com###items.ytd-grid-renderer > ytd-grid-video-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-radio-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-channel-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-playlist-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-movie-playlist-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-movie-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-show-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-game-card-renderer.ytd-grid-renderer:style(width: 196px !important;)
 youtube.com##ytd-rich-item-renderer,ytd-thumbnail.ytd-grid-video-renderer:style(width: 196px !important;)
@@ -13,7 +19,7 @@ youtube.com##h3.ytd-rich-grid-video-renderer,h3.ytd-grid-video-renderer:style(ma
 youtube.com##ytd-rich-item-renderer:style(margin-bottom: 20px !important;)
 youtube.com###meta.ytd-rich-grid-video-renderer:style(padding-right: 0 !important;)
 ! fonts
-youtube.com##body:style(font: 12px "YouTube Noto",Roboto,arial,sans-serif !important;)
+youtube.com##body, input, button, textarea, select:style(font-family: "YouTube Noto",Roboto,arial,sans-serif !important; font-size: 13px !important;)
 !youtube.com##ytd-rich-grid-video-renderer[mini-mode] #video-title.ytd-rich-grid-video-renderer,#video-title.yt-simple-endpoint.ytd-grid-video-renderer:style(font-size: 13px !important; color: #167ac6 !important; font-weight: 500 !important;)
 youtube.com###video-title.ytd-rich-grid-video-renderer,#video-title.yt-simple-endpoint.ytd-grid-video-renderer:style(font-size: 13px !important; color: #167ac6 !important; font-weight: 500 !important;)
 youtube.com###video-title.ytd-rich-grid-video-renderer:hover,#video-title.yt-simple-endpoint.ytd-grid-video-renderer:hover:style(text-decoration: underline !important;)
@@ -42,5 +48,6 @@ youtube.com##ytd-watch-flexy:not([theater]):not([fullscreen]) #primary.ytd-watch
 !youtube.com###player.ytd-watch-flexy:style(background-color: black !important;)
 !youtube.com##ytd-watch-flexy[flexy_] #player-container-outer.ytd-watch-flexy:style(max-width: 100% !important;)
 !youtube.com##.html5-video-container > video:style(width: auto !important; height: auto !important;)
+!youtube.com##.ytp-chrome-top, .ytp-chrome-bottom:style(width: 98% !important;)
 ! avatars
 youtube.com###author-thumbnail.ytd-comment-renderer yt-img-shadow.ytd-comment-renderer:style(border-radius: 0 !important;)
