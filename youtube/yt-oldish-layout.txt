@@ -11,18 +11,36 @@ youtube.com##ytd-rich-item-renderer,ytd-thumbnail.ytd-grid-video-renderer:style(
 youtube.com###avatar-link.ytd-rich-grid-video-renderer
 youtube.com##h3.ytd-rich-grid-video-renderer,h3.ytd-grid-video-renderer:style(margin: 0 !important;)
 youtube.com##ytd-rich-item-renderer:style(margin-bottom: 20px !important;)
+youtube.com###meta.ytd-rich-grid-video-renderer:style(padding-right: 0 !important;)
 ! fonts
-youtube.com##ytd-rich-grid-video-renderer[mini-mode] #video-title.ytd-rich-grid-video-renderer,#video-title.yt-simple-endpoint.ytd-grid-video-renderer:style(font-size: 13px !important; color: #167ac6 !important; font-weight: 500 !important;)
-youtube.com##ytd-rich-grid-video-renderer[mini-mode] #video-title.ytd-rich-grid-video-renderer:hover,#video-title.yt-simple-endpoint.ytd-grid-video-renderer:hover:style(text-decoration: underline !important;)
-youtube.com##ytd-video-meta-block[rich-meta] #channel-name.ytd-video-meta-block, ytd-video-meta-block[rich-meta] #metadata-line.ytd-video-meta-block, #metadata-line.ytd-grid-video-renderer, #byline-container.ytd-grid-video-renderer:style(font-size: 11px !important; font-weight: 500 !important; color: #767676 !important;)
 youtube.com##body:style(font: 12px "YouTube Noto",Roboto,arial,sans-serif !important;)
-youtube.com##yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string:hover:style(color: #167ac6 !important; text-decoration: underline !important;)
+!youtube.com##ytd-rich-grid-video-renderer[mini-mode] #video-title.ytd-rich-grid-video-renderer,#video-title.yt-simple-endpoint.ytd-grid-video-renderer:style(font-size: 13px !important; color: #167ac6 !important; font-weight: 500 !important;)
+youtube.com###video-title.ytd-rich-grid-video-renderer,#video-title.yt-simple-endpoint.ytd-grid-video-renderer:style(font-size: 13px !important; color: #167ac6 !important; font-weight: 500 !important;)
+youtube.com###video-title.ytd-rich-grid-video-renderer:hover,#video-title.yt-simple-endpoint.ytd-grid-video-renderer:hover:style(text-decoration: underline !important;)
+youtube.com##ytd-video-meta-block[rich-meta] #channel-name.ytd-video-meta-block, ytd-video-meta-block[rich-meta] #metadata-line.ytd-video-meta-block, #metadata-line.ytd-grid-video-renderer, #byline-container.ytd-grid-video-renderer,#text.ytd-channel-name,#metadata-line.ytd-video-meta-block:style(font-size: 11px !important; font-weight: 500 !important; color: #767676 !important;)
+youtube.com##yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string:hover,#text.ytd-channel-name:hover:style(color: #167ac6 !important; text-decoration: underline !important;)
 youtube.com###metadata-line.ytd-video-meta-block, ytd-video-meta-block[rich-meta] #channel-name.ytd-video-meta-block, ytd-video-meta-block[rich-meta] #metadata-line.ytd-video-meta-block, ytd-rich-grid-video-renderer[mini-mode] #video-title.ytd-rich-grid-video-renderer, #video-title.ytd-rich-grid-video-renderer, #metadata-line.ytd-grid-video-renderer:style(line-height: 1.3em !important;)
+! comment fonts
+youtube.com###button.ytd-button-renderer yt-icon.ytd-button-renderer + yt-formatted-string.ytd-button-renderer:style(font-size: 13px !important;)
+youtube.com###button.ytd-button-renderer yt-icon.ytd-button-renderer + yt-formatted-string.ytd-button-renderer:hover:style(text-decoration: underline !important;)
+youtube.com##.published-time-text.ytd-comment-renderer:style(font-size: 11px !important;)
+youtube.com###author-text.yt-simple-endpoint.ytd-comment-renderer:style(font-size: 13px !important; color: #167ac6 !important;)
+youtube.com###author-text.yt-simple-endpoint.ytd-comment-renderer:hover:style(text-decoration: underline !important;)
+youtube.com###content-text.ytd-comment-renderer:style(font-size: 13px !important; line-height: 1.3em !important;)
 ! grid title
 youtube.com###title.ytd-rich-grid-renderer, #title.ytd-rich-shelf-renderer:style(line-height: 1.7em !important; font-size: 15px !important; margin-bottom: 0 !important;)
 youtube.com###grid-header.ytd-rich-grid-renderer,#rich-shelf-header.ytd-rich-shelf-renderer:style(margin: 14px 0 14px 8px !important;)
 ! misc
 youtube.com###details.ytd-rich-grid-video-renderer:style(cursor: auto !important; pointer-events: none !important;)
 youtube.com###details.ytd-rich-grid-video-renderer *> a:style(cursor: pointer !important; pointer-events: initial !important;)
+youtube.com##.toggle-button.paper-toggle-button:style(box-shadow: none !important;)
 !youtube.com###mouseover-overlay, #hover-overlays
 youtube.com###masthead-container.ytd-app:style(border-bottom: 1px solid #e8e8e8 !important;)
+! player page
+youtube.com##ytd-watch-flexy:not([theater]):not([fullscreen]) #primary.ytd-watch-flexy, ytd-watch-flexy:not([theater]):not([fullscreen]) #secondary.ytd-watch-flexy:style(max-width: 100% !important;)
+! the player
+!youtube.com###player.ytd-watch-flexy:style(background-color: black !important;)
+!youtube.com##ytd-watch-flexy[flexy_] #player-container-outer.ytd-watch-flexy:style(max-width: 100% !important;)
+!youtube.com##.html5-video-container > video:style(width: auto !important; height: auto !important;)
+! avatars
+youtube.com###author-thumbnail.ytd-comment-renderer yt-img-shadow.ytd-comment-renderer:style(border-radius: 0 !important;)
