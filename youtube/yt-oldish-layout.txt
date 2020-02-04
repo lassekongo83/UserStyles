@@ -1,0 +1,28 @@
+! Title: Oldish YouTube
+! Expires: 7 days (update frequency)
+! Homepage: https://github.com/lassekongo83/UserStyles
+! Description: Tries to convert the new YouTube layout to behave more like the old one.
+! This style can be added to uBlock Origin.
+
+! This is currently a WIP. May break stuff!
+! thumbs
+youtube.com###items.ytd-grid-renderer > ytd-grid-video-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-radio-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-channel-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-playlist-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-movie-playlist-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-movie-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-show-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-game-card-renderer.ytd-grid-renderer:style(width: 196px !important;)
+youtube.com##ytd-rich-item-renderer,ytd-thumbnail.ytd-grid-video-renderer:style(width: 196px !important;)
+youtube.com###avatar-link.ytd-rich-grid-video-renderer
+youtube.com##h3.ytd-rich-grid-video-renderer,h3.ytd-grid-video-renderer:style(margin: 0 !important;)
+youtube.com##ytd-rich-item-renderer:style(margin-bottom: 20px !important;)
+! fonts
+youtube.com##ytd-rich-grid-video-renderer[mini-mode] #video-title.ytd-rich-grid-video-renderer,#video-title.yt-simple-endpoint.ytd-grid-video-renderer:style(font-size: 13px !important; color: #167ac6 !important; font-weight: 500 !important;)
+youtube.com##ytd-rich-grid-video-renderer[mini-mode] #video-title.ytd-rich-grid-video-renderer:hover,#video-title.yt-simple-endpoint.ytd-grid-video-renderer:hover:style(text-decoration: underline !important;)
+youtube.com##ytd-video-meta-block[rich-meta] #channel-name.ytd-video-meta-block, ytd-video-meta-block[rich-meta] #metadata-line.ytd-video-meta-block, #metadata-line.ytd-grid-video-renderer, #byline-container.ytd-grid-video-renderer:style(font-size: 11px !important; font-weight: 500 !important; color: #767676 !important;)
+youtube.com##body:style(font: 12px "YouTube Noto",Roboto,arial,sans-serif !important;)
+youtube.com##yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string:hover:style(color: #167ac6 !important; text-decoration: underline !important;)
+youtube.com###metadata-line.ytd-video-meta-block, ytd-video-meta-block[rich-meta] #channel-name.ytd-video-meta-block, ytd-video-meta-block[rich-meta] #metadata-line.ytd-video-meta-block, ytd-rich-grid-video-renderer[mini-mode] #video-title.ytd-rich-grid-video-renderer, #video-title.ytd-rich-grid-video-renderer, #metadata-line.ytd-grid-video-renderer:style(line-height: 1.3em !important;)
+! grid title
+youtube.com###title.ytd-rich-grid-renderer, #title.ytd-rich-shelf-renderer:style(line-height: 1.7em !important; font-size: 15px !important; margin-bottom: 0 !important;)
+youtube.com###grid-header.ytd-rich-grid-renderer,#rich-shelf-header.ytd-rich-shelf-renderer:style(margin: 14px 0 14px 8px !important;)
+! misc
+youtube.com###details.ytd-rich-grid-video-renderer:style(cursor: auto !important; pointer-events: none !important;)
+youtube.com###details.ytd-rich-grid-video-renderer *> a:style(cursor: pointer !important; pointer-events: initial !important;)
+!youtube.com###mouseover-overlay, #hover-overlays
+youtube.com###masthead-container.ytd-app:style(border-bottom: 1px solid #e8e8e8 !important;)
