@@ -6,6 +6,7 @@
 
 ! This is currently a WIP. May break stuff!
 ! masthead
+youtube.com##ytd-masthead:style(background: white !important;)
 youtube.com###container.ytd-masthead:style(height: 49px !important;)
 youtube.com###page-manager.ytd-app:style(margin-top: 50px !important; --ytd-toolbar-offset: 50px !important;)
 ! mini-guide/app-drawer
@@ -33,12 +34,13 @@ youtube.com##.published-time-text.ytd-comment-renderer:style(font-size: 11px !im
 youtube.com###author-text.yt-simple-endpoint.ytd-comment-renderer:style(font-size: 13px !important; color: #167ac6 !important;)
 youtube.com###author-text.yt-simple-endpoint.ytd-comment-renderer:hover:style(text-decoration: underline !important;)
 youtube.com###content-text.ytd-comment-renderer:style(font-size: 13px !important; line-height: 1.3em !important;)
+!youtube.com##ytd-author-comment-badge-renderer[creator]:style(--ytd-author-comment-badge-background-color: #357AE8 !important; --ytd-author-comment-badge-name-color: white !important;)
 ! grid title
 youtube.com###title.ytd-rich-grid-renderer, #title.ytd-rich-shelf-renderer:style(line-height: 1.7em !important; font-size: 15px !important; margin-bottom: 0 !important;)
 youtube.com###grid-header.ytd-rich-grid-renderer,#rich-shelf-header.ytd-rich-shelf-renderer:style(margin: 14px 0 14px 8px !important;)
 ! misc
 youtube.com###details.ytd-rich-grid-video-renderer:style(cursor: auto !important; pointer-events: none !important;)
-youtube.com###details.ytd-rich-grid-video-renderer *> a:style(cursor: pointer !important; pointer-events: initial !important;)
+youtube.com###details.ytd-rich-grid-video-renderer *> a, #details.ytd-rich-grid-video-renderer *> button.yt-icon-button:style(cursor: pointer !important; pointer-events: initial !important;)
 youtube.com##.toggle-button.paper-toggle-button:style(box-shadow: none !important;)
 !youtube.com###mouseover-overlay, #hover-overlays
 youtube.com###masthead-container.ytd-app:style(border-bottom: 1px solid #e8e8e8 !important;)
