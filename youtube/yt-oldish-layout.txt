@@ -10,6 +10,8 @@
 youtube.com##ytd-masthead:style(background: white !important;)
 youtube.com###container.ytd-masthead:style(height: 49px !important;)
 youtube.com###page-manager.ytd-app:style(margin-top: 50px !important; --ytd-toolbar-offset: 50px !important;)
+! logo
+youtube.com###logo-icon-container.ytd-topbar-logo-renderer:style(width: 100px !important; height: 30px !important;)
 ! mini-guide/app-drawer
 youtube.com##app-drawer:style(top: -126px !important; border-right: 1px solid #e8e8e8 !important;)
 youtube.com##ytd-app:style(--app-drawer-width: 230px !important;)
@@ -48,8 +50,7 @@ youtube.com###author-text.yt-simple-endpoint.ytd-comment-renderer:hover:style(te
 youtube.com###content-text.ytd-comment-renderer:style(font-size: 13px !important; line-height: 1.3em !important;)
 !youtube.com##ytd-author-comment-badge-renderer[creator]:style(--ytd-author-comment-badge-background-color: #357AE8 !important; --ytd-author-comment-badge-name-color: white !important;)
 ! grid title
-!youtube.com###title.ytd-rich-grid-renderer, #title.ytd-rich-shelf-renderer:style(line-height: 1.7em !important; font-size: 15px !important; margin-bottom: 0 !important;)
-!youtube.com###grid-header.ytd-rich-grid-renderer,#rich-shelf-header.ytd-rich-shelf-renderer:style(margin: 14px 0 14px 8px !important;)
+youtube.com###title.ytd-rich-shelf-renderer,#title.ytd-rich-grid-renderer:style(font-size: 14px !important; line-height: 1.3em !important;)
 ! misc
 youtube.com###details.ytd-rich-grid-video-renderer:style(cursor: auto !important; pointer-events: none !important;)
 youtube.com###details.ytd-rich-grid-video-renderer *> a, #details.ytd-rich-grid-video-renderer *> button.yt-icon-button:style(cursor: pointer !important; pointer-events: initial !important;)
@@ -65,3 +66,7 @@ youtube.com##ytd-watch-flexy:not([theater]):not([fullscreen]) #primary.ytd-watch
 !youtube.com##.ytp-chrome-top, .ytp-chrome-bottom:style(width: 98% !important;)
 ! avatars
 youtube.com###author-thumbnail.ytd-comment-renderer yt-img-shadow.ytd-comment-renderer:style(border-radius: 0 !important;)
+! grid
+youtube.com##ytd-rich-grid-renderer:style(background-color: white !important; box-shadow: 0 1px 2px rgba(0,0,0,.1) !important; margin-top: 24px !important; padding: 0 18px !important;)
+youtube.com##ytd-rich-shelf-renderer:style(border-top: 1px solid #e8e8e8 !important;)
+youtube.com###show-more-button.ytd-rich-shelf-renderer:style(border-bottom: 1px solid #e8e8e8 !important;)
