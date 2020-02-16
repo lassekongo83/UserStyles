@@ -6,6 +6,8 @@
 
 ! This is currently a WIP. May break stuff!
 
+! ytd-app
+youtube.com##ytd-app:style(--app-drawer-content-container_-_background-color: #f1f1f1 !important; background: #f1f1f1 !important;)
 ! masthead
 youtube.com##ytd-masthead:style(background: white !important;)
 youtube.com###container.ytd-masthead:style(height: 49px !important;)
@@ -63,19 +65,27 @@ youtube.com##.toggle-button.paper-toggle-button:style(box-shadow: none !importan
 youtube.com###masthead-container.ytd-app:style(border-bottom: 1px solid #e8e8e8 !important;)
 ! player page
 youtube.com##ytd-watch-flexy:not([theater]):not([fullscreen]) #primary.ytd-watch-flexy, ytd-watch-flexy:not([theater]):not([fullscreen]) #secondary.ytd-watch-flexy:style(max-width: 100% !important;)
+youtube.com###primary.ytd-watch-flexy:style(padding-right: 10px !important;)
 ! the player
 !youtube.com###player.ytd-watch-flexy:style(background-color: black !important;)
 !youtube.com##ytd-watch-flexy[flexy_] #player-container-outer.ytd-watch-flexy:style(max-width: 100% !important;)
 !youtube.com##.html5-video-container > video:style(width: auto !important; height: auto !important;)
 !youtube.com##.ytp-chrome-top, .ytp-chrome-bottom:style(width: 98% !important;)
 ! player info renderer
-youtube.com##ytd-video-primary-info-renderer:style(background-color: white !important; box-shadow: 0 1px 2px rgba(0,0,0,.1) !important; padding: 15px !important; margin-top: 10px !important;)
+youtube.com##ytd-video-primary-info-renderer:style(background-color: white !important; box-shadow: 0 1px 2px rgba(0,0,0,.1) !important; padding: 15px !important; margin-top: 10px !important; border: none !important;)
+youtube.com##ytd-expander.ytd-video-secondary-info-renderer:style(font-size: 13px !important; line-height: 1.3em !important; --ytd-expander-collapsed-height: 42px !important; border: none !important; margin-left: 0 !important;)
+youtube.com##ytd-video-secondary-info-renderer:style(background-color: white !important; box-shadow: 0 1px 2px rgba(0,0,0,.1) !important; margin: 10px 0 !important; padding: 15px !important; border: none !important;)
+youtube.com##ytd-comments:style(background-color: white !important; box-shadow: 0 1px 2px rgba(0,0,0,.1) !important; padding: 15px !important; border: none !important;)
+youtube.com###top-row.ytd-video-secondary-info-renderer:style(padding-top: 0 !important;)
+youtube.com##ytd-comments-header-renderer:style(margin-top: 0 !important;)
+youtube.com##paper-button.ytd-expander:style(width: 100% !important; border-top: 1px solid #e8e8e8 !important; margin: 10px 0 -15px !important;)
+youtube.com##.more-button.ytd-video-secondary-info-renderer, .less-button.ytd-video-secondary-info-renderer:style(font-size: 12px !important;)
 ! avatars
 youtube.com###author-thumbnail.ytd-comment-renderer yt-img-shadow.ytd-comment-renderer:style(border-radius: 0 !important;)
 ! grid
-youtube.com##ytd-rich-grid-renderer:style(background-color: white !important; box-shadow: 0 1px 2px rgba(0,0,0,.1) !important; margin-top: 24px !important; padding: 0 18px !important;)
+youtube.com##ytd-rich-grid-renderer:style(background-color: white !important; box-shadow: 0 1px 2px rgba(0,0,0,.1) !important; margin-top: 24px !important; padding: 0 18px !important; border: none !important;)
 youtube.com##ytd-rich-shelf-renderer:style(border-top: 1px solid #e8e8e8 !important;)
 youtube.com###show-more-button.ytd-rich-shelf-renderer:style(border-bottom: 1px solid #e8e8e8 !important;)
 ! search results/cards
-youtube.com##ytd-section-list-renderer:style(background-color: white !important; box-shadow: 0 1px 2px rgba(0,0,0,.1) !important; margin-top: 24px !important; padding: 0 18px !important;)
-youtube.com###items.ytd-watch-next-secondary-results-renderer:style(background-color: white !important; box-shadow: 0 1px 2px rgba(0,0,0,.1) !important; padding: 15px !important;)
+youtube.com##ytd-section-list-renderer:style(background-color: white !important; box-shadow: 0 1px 2px rgba(0,0,0,.1) !important; margin-top: 24px !important; padding: 0 18px !important; border: none !important;)
+youtube.com###items.ytd-watch-next-secondary-results-renderer:style(background-color: white !important; box-shadow: 0 1px 2px rgba(0,0,0,.1) !important; padding: 15px !important; border: none !important;)
