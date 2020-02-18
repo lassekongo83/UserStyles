@@ -78,7 +78,7 @@ youtube.com##ytd-video-secondary-info-renderer:style(background-color: white !im
 youtube.com##ytd-comments:style(background-color: white !important; box-shadow: 0 1px 2px rgba(0,0,0,.1) !important; padding: 15px !important; border: none !important;)
 youtube.com###top-row.ytd-video-secondary-info-renderer:style(padding-top: 0 !important;)
 youtube.com##ytd-comments-header-renderer:style(margin-top: 0 !important;)
-youtube.com##paper-button.ytd-expander:style(width: 100% !important; border-top: 1px solid #e8e8e8 !important; margin: 10px 0 -15px !important;)
+youtube.com##paper-button.ytd-expander:style(width: 100% !important; border-top: 1px solid #e8e8e8 !important; margin: 0px 0 -15px !important;)
 youtube.com##.more-button.ytd-video-secondary-info-renderer, .less-button.ytd-video-secondary-info-renderer:style(font-size: 12px !important;)
 ! avatars
 youtube.com###author-thumbnail.ytd-comment-renderer yt-img-shadow.ytd-comment-renderer:style(border-radius: 0 !important;)
@@ -89,3 +89,7 @@ youtube.com###show-more-button.ytd-rich-shelf-renderer:style(border-bottom: 1px 
 ! search results/cards
 youtube.com##ytd-section-list-renderer:style(background-color: white !important; box-shadow: 0 1px 2px rgba(0,0,0,.1) !important; margin-top: 24px !important; padding: 0 18px !important; border: none !important;)
 youtube.com###items.ytd-watch-next-secondary-results-renderer:style(background-color: white !important; box-shadow: 0 1px 2px rgba(0,0,0,.1) !important; padding: 15px !important; border: none !important;)
+! comments
+youtube.com##ytd-author-comment-badge-renderer[creator]:style(--ytd-author-comment-badge-background-color: #008bec !important;)
+youtube.com###name.ytd-author-comment-badge-renderer:style(color: #fff !important;)
+youtube.com##ytd-author-comment-badge-renderer[creator] *> #text.ytd-channel-name:style(color: #fff !important;)
