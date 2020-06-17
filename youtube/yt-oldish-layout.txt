@@ -54,7 +54,9 @@ youtube.com##.published-time-text.ytd-comment-renderer:style(font-size: 11px !im
 youtube.com###author-text.yt-simple-endpoint.ytd-comment-renderer:style(font-size: 13px !important; color: #167ac6 !important;)
 youtube.com###author-text.yt-simple-endpoint.ytd-comment-renderer:hover:style(text-decoration: underline !important;)
 youtube.com###content-text.ytd-comment-renderer:style(font-size: 13px !important; line-height: 1.3em !important;)
-!youtube.com##ytd-author-comment-badge-renderer[creator]:style(--ytd-author-comment-badge-background-color: #357AE8 !important; --ytd-author-comment-badge-name-color: white !important;)
+youtube.com##ytd-author-comment-badge-renderer[creator]:style(--ytd-author-comment-badge-background-color: #357AE8 !important; --ytd-author-comment-badge-name-color: white !important;)
+youtube.com###name.ytd-author-comment-badge-renderer *> #text.ytd-channel-name:style(color: #fff !important;)
+youtube.com###name.ytd-author-comment-badge-renderer *> #text.ytd-channel-name:hover:style(color: #fff !important;)
 ! grid title
 youtube.com###title.ytd-rich-shelf-renderer,#title.ytd-rich-grid-renderer:style(font-size: 14px !important; line-height: 1.3em !important;)
 ! misc
