@@ -28,7 +28,10 @@ youtube.com##.guide-icon.ytd-guide-entry-renderer:style(--iron-icon-height: 20px
 youtube.com###endpoint.yt-simple-endpoint.ytd-guide-entry-renderer, #endpoint.yt-simple-endpoint.ytd-guide-entry-renderer > paper-item:style(min-height: 28px !important;)
 youtube.com##paper-item.ytd-guide-entry-renderer:style(height: 28px !important;)
 youtube.com###guide-section-title.ytd-guide-section-renderer:style(padding: 1px 0 8px !important; line-height: 13px !important; font-size: 11px !important; font-weight: 500 !important; color: #f00 !important;)
+youtube.com###primary.ytd-two-column-browse-results-renderer:style(max-width: 1262px !important; margin: 0 auto !important;)
+youtube.com##ytd-rich-grid-renderer:style(padding: 0 6px !important;)
 ! thumbs
+||yt3.ggpht.com/a-/
 youtube.com###items.ytd-grid-renderer > ytd-grid-video-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-radio-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-channel-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-playlist-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-movie-playlist-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-movie-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-show-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-game-card-renderer.ytd-grid-renderer:style(width: 196px !important;)
 youtube.com##ytd-rich-item-renderer,ytd-thumbnail.ytd-grid-video-renderer:style(width: 196px !important;)
 youtube.com###avatar-link.ytd-rich-grid-video-renderer
