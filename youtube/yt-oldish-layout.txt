@@ -37,10 +37,17 @@ youtube.com##ytd-compact-promoted-item-renderer
 youtube.com##ytd-movie-renderer.ytd-item-section-renderer
 
 ! bg colors
-youtube.com##html:not(.style-scope):style(--yt-spec-brand-background-primary: #fff !important;)
-youtube.com##html:not(.style-scope):style(--yt-spec-general-background-a: #f1f1f1 !important;)
+youtube.com##html:not(.style-scope):not([dark]):style(--yt-spec-brand-background-primary: #fff !important;)
+youtube.com##html:not(.style-scope):not([dark]):style(--yt-spec-general-background-a: #f1f1f1 !important;)
+youtube.com##html:not([dark]) *> #items.ytd-watch-next-secondary-results-renderer:style(background-color: white !important;)
+youtube.com##html:not([dark]) *> ytd-two-column-browse-results-renderer:style(background-color: white !important;)
+youtube.com##html:not([dark]) *> ytd-video-primary-info-renderer:style(background-color: white !important;)
+youtube.com##html:not([dark]) *> ytd-video-primary-info-renderer:style(background-color: white !important;)
+youtube.com##html:not([dark]) *> ytd-video-secondary-info-renderer:style(background-color: white !important;)
+youtube.com##html:not([dark]) *> ytd-comments:style(background-color: white !important;)
+youtube.com##html:not([dark]) *> ytd-two-column-search-results-renderer[center-results] #primary.ytd-two-column-search-results-renderer:style(background-color: white !important;)
 ! fonts
-youtube.com##html:not(.style-scope):style(--paper-font-common-base_-_font-family: "YouTube Noto",Roboto,arial,sans-serif !important;)
+youtube.com##html,html:not(.style-scope):style(--paper-font-common-base_-_font-family: "YouTube Noto",Roboto,arial,sans-serif !important;)
 youtube.com##html:not(.style-scope):style(--yt-spec-text-secondary: #767676 !important;)
 youtube.com##ytd-compact-video-renderer #video-title.ytd-compact-video-renderer,.title.ytd-guide-entry-renderer,paper-button.ytd-button-renderer,ytd-expander.ytd-video-secondary-info-renderer:style(font-size: 13px !important;)
 youtube.com##yt-view-count-renderer[small_],#date.ytd-video-primary-info-renderer,ytd-toggle-button-renderer.style-text[is-icon-button] #text.ytd-toggle-button-renderer,ytd-button-renderer.style-default[is-icon-button] #text.ytd-button-renderer:style(font-size: 11px !important;)
@@ -54,13 +61,13 @@ youtube.com###content-text.ytd-comment-renderer,#author-text.yt-simple-endpoint.
 youtube.com###author-text.yt-simple-endpoint.ytd-comment-renderer:style(color: #167ac6 !important; font-weight: 500 !important;)
 youtube.com###author-text.yt-simple-endpoint.ytd-comment-renderer:hover:style(text-decoration: underline !important;)
 ! mast-head
-youtube.com###container.ytd-masthead:style(height: 49px !important; border-bottom: 1px solid #e8e8e8 !important;)
+youtube.com##html:not([dark]) *> #container.ytd-masthead:style(height: 49px !important; border-bottom: 1px solid #e8e8e8 !important;)
 !youtube.com###logo-icon-container.ytd-topbar-logo-renderer:style(width: 100px !important; height: 30px !important;)
 ! search box
 youtube.com###container.ytd-searchbox,#search-icon-legacy.ytd-searchbox:style(border-radius: 0 !important;)
 ! left sidebar guide
 youtube.com###guide-spacer.ytd-app:style(margin-top: 50px !important;)
-youtube.com##app-drawer#guide,ytd-guide-renderer.ytd-app:style(max-width: 230px !important; border-right: 1px solid #e8e8e8 !important;)
+youtube.com##html:not([dark]) *> app-drawer#guide,html:not([dark]) *> ytd-guide-renderer.ytd-app:style(max-width: 230px !important; border-right: 1px solid #e8e8e8 !important;)
 youtube.com##paper-item.ytd-guide-entry-renderer:style(height: 40px !important;)
 youtube.com###endpoint.yt-simple-endpoint.ytd-guide-entry-renderer:style(min-height: 40px !important;)
 youtube.com##paper-item.ytd-guide-entry-renderer:style(height: 28px !important;)
@@ -83,9 +90,9 @@ youtube.com###grid-title.ytd-rich-grid-renderer:style(margin: 10px 0 0 10px !imp
 youtube.com###rich-shelf-header.ytd-rich-shelf-renderer:style(margin: 10px 0 10px 0px !important;)
 ! grid
 ! Only tested with 1920 display. (1262px)
-youtube.com##ytd-two-column-browse-results-renderer:style(max-width: 66vw !important; min-width: 640px !important; background-color: white !important; margin-top: 10px !important;)
-youtube.com##ytd-rich-shelf-renderer:style(border-top: 1px solid #e2e2e2 !important;)
-youtube.com###show-more-button.ytd-rich-shelf-renderer:style(border-bottom: 1px solid #e2e2e2 !important;)
+youtube.com##ytd-two-column-browse-results-renderer:style(max-width: 66vw !important; min-width: 640px !important; margin-top: 10px !important;)
+youtube.com##html:not([dark]) *> ytd-rich-shelf-renderer:style(border-top: 1px solid #e2e2e2 !important;)
+youtube.com##html:not([dark]) *> #show-more-button.ytd-rich-shelf-renderer:style(border-bottom: 1px solid #e2e2e2 !important;)
 ! thumbs
 youtube.com##html:not(.style-scope):style(--ytd-rich-grid-item-margin: 10px !important;)
 youtube.com##ytd-thumbnail.ytd-rich-grid-video-renderer:style(margin-bottom: 4px !important;)
@@ -96,6 +103,12 @@ youtube.com###meta.ytd-rich-grid-video-renderer:style(padding-right: 0 !importan
 ! old pointer events on thumbnail details
 youtube.com###details.ytd-rich-grid-video-renderer:style(cursor: auto !important; pointer-events: none !important;)
 youtube.com###details.ytd-rich-grid-video-renderer *> a, #details.ytd-rich-grid-video-renderer *> button.yt-icon-button:style(cursor: pointer !important; pointer-events: initial !important;)
+! channels
+!youtube.com###header.ytd-c4-tabbed-header-renderer:style(--app-header-background-front-layer_-_background-size: 66vw 175px !important; --app-header-background-front-layer_-_background-position: center 0 !important;)
+youtube.com##ytd-section-list-renderer:style(padding: 0 15px !important;)
+youtube.com###channel-container *> #text.ytd-channel-name:style(font-size: 20px !important;)
+youtube.com###channel-container *> #text.ytd-channel-name:hover:style(text-decoration: initial !important; color: initial !important;)
+youtube.com###avatar.ytd-c4-tabbed-header-renderer
 ! player
 ! Disabled because it's very buggy
 !youtube.com##ytd-watch-flexy[flexy_]:style(--ytd-watch-flexy-min-player-width: 280px !important; --ytd-watch-flexy-max-player-width: 1280px !important; --ytd-watch-flexy-max-player-height: 720px !important; --ytd-watch-flexy-max-player-height: 192px !important;)
@@ -103,16 +116,17 @@ youtube.com###details.ytd-rich-grid-video-renderer *> a, #details.ytd-rich-grid-
 !youtube.com##.ytp-hover-progress-light, .ytp-chapter-hover-container, .ytp-chrome-bottom:style(left: 0 !important;)
 !youtube.com##.html5-main-video:style(max-width: 1280px !important; max-height: 720px !important;)
 ! player sidebar
-youtube.com###items.ytd-watch-next-secondary-results-renderer:style(background-color: white !important; max-width: 396px !important; padding: 10px !important;)
+youtube.com###items.ytd-watch-next-secondary-results-renderer:style(max-width: 396px !important; padding: 10px !important;)
 youtube.com###items.ytd-watch-next-secondary-results-renderer *> #text.ytd-channel-name:hover:style(text-decoration: none !important; color: inherit !important;)
 ! player info renderer and comments
-youtube.com##ytd-video-primary-info-renderer:style(background-color: white !important; padding: 15px !important; margin-top: 10px !important; border: none !important;)
+youtube.com##ytd-video-primary-info-renderer:style(padding: 15px !important; margin-top: 10px !important; border: none !important;)
 youtube.com##ytd-expander.ytd-video-secondary-info-renderer:style(font-size: 13px !important; line-height: 1.3em !important; --ytd-expander-collapsed-height: 42px !important; border: none !important; margin-left: 0 !important;)
-youtube.com##ytd-video-secondary-info-renderer:style(background-color: white !important; margin: 10px 0 !important; padding: 15px !important; border: none !important;)
-youtube.com##ytd-comments:style(background-color: white !important; padding: 15px !important; border: none !important;)
+youtube.com##ytd-video-secondary-info-renderer:style(margin: 10px 0 !important; padding: 15px !important; border: none !important;)
+youtube.com##ytd-comments:style(padding: 15px !important; border: none !important;)
 youtube.com###top-row.ytd-video-secondary-info-renderer:style(padding-top: 0 !important;)
 youtube.com##ytd-comments-header-renderer:style(margin-top: 0 !important;)
-youtube.com##paper-button.ytd-expander:style(width: 100% !important; border-top: 1px solid #e8e8e8 !important; margin: 0px 0 -15px !important;)
+youtube.com##paper-button.ytd-expander:style(width: 100% !important; margin: 0px 0 -15px !important;)
+youtube.com##html:not([dark]) *> paper-button.ytd-expander:style(border-top: 1px solid #e8e8e8 !important;)
 youtube.com##.more-button.ytd-video-secondary-info-renderer, .less-button.ytd-video-secondary-info-renderer:style(font-size: 12px !important;)
 youtube.com##ytd-author-comment-badge-renderer[creator]:style(--ytd-author-comment-badge-background-color: #008bec !important;)
 youtube.com###name.ytd-author-comment-badge-renderer:style(color: #fff !important;)
@@ -121,6 +135,6 @@ youtube.com##.more-button.ytd-comment-renderer, .less-button.ytd-comment-rendere
 ! make avatars square
 youtube.com###author-thumbnail.ytd-comment-renderer yt-img-shadow.ytd-comment-renderer:style(border-radius: 0 !important;)
 ! search results
-youtube.com##ytd-two-column-search-results-renderer[center-results] #primary.ytd-two-column-search-results-renderer:style(background-color: white !important; padding: 0 18px !important; border: none !important;)
+youtube.com##ytd-two-column-search-results-renderer[center-results] #primary.ytd-two-column-search-results-renderer:style(padding: 0 18px !important; border: none !important;)
 youtube.com##ytd-two-column-search-results-renderer *> #video-title.ytd-video-renderer:style(font-size: 18px !important; font-weight: 300 !important; color: #167ac6 !important;)
 youtube.com##ytd-two-column-search-results-renderer *> #video-title.ytd-video-renderer:hover:style(text-decoration: underline !important;)
