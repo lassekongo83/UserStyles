@@ -12,7 +12,7 @@
 ! Disable the miniplayer
 /miniplayer.js$script,domain=youtube.com
 youtube.com##.ytp-miniplayer-button
-! Disable chromecast
+! Disable casting
 /remote.js$script,domain=youtube.com
 ! Disable the end screen thumbnails
 /endscreen.js$script,domain=youtube.com
@@ -35,39 +35,50 @@ youtube.com##ytd-popup-container:has(#content.yt-tooltip-renderer yt-formatted-s
 youtube.com##ytd-compact-promoted-item-renderer
 ! Gets rid of movies from search results
 youtube.com##ytd-movie-renderer.ytd-item-section-renderer
+! hide live videos
+!||i.ytimg.com/vi/*/hq720_live.$image
+!youtube.com##ytd-rich-item-renderer:has(.badge-style-type-live-now)
 
 ! bg colors
 youtube.com##html:not(.style-scope):not([dark]):style(--yt-spec-brand-background-primary: #fff !important;)
 youtube.com##html:not(.style-scope):not([dark]):style(--yt-spec-general-background-a: #f1f1f1 !important;)
 youtube.com##html:not([dark]) *> #items.ytd-watch-next-secondary-results-renderer:style(background-color: white !important;)
-youtube.com##html:not([dark]) *> ytd-two-column-browse-results-renderer:style(background-color: white !important;)
+youtube.com##html:not([dark]) *> #primary.ytd-two-column-browse-results-renderer:style(background-color: white !important;)
+youtube.com##html:not([dark]) *> ytd-browse-secondary-contents-renderer.ytd-two-column-browse-results-renderer:style(background-color: white !important;)
 youtube.com##html:not([dark]) *> ytd-video-primary-info-renderer:style(background-color: white !important;)
 youtube.com##html:not([dark]) *> ytd-video-primary-info-renderer:style(background-color: white !important;)
 youtube.com##html:not([dark]) *> ytd-video-secondary-info-renderer:style(background-color: white !important;)
 youtube.com##html:not([dark]) *> ytd-comments:style(background-color: white !important;)
 youtube.com##html:not([dark]) *> ytd-two-column-search-results-renderer[center-results] #primary.ytd-two-column-search-results-renderer:style(background-color: white !important;)
+youtube.com##html:not([dark]) *> ytd-c4-tabbed-header-renderer:style(--yt-lightsource-section1-color: white !important;)
 ! fonts
-youtube.com##html,html:not(.style-scope):style(--paper-font-common-base_-_font-family: "YouTube Noto",Roboto,arial,sans-serif !important;)
+youtube.com##html:not(.style-scope):style(--ytd-subheadline_-_font-size: 13px !important; --ytd-subheadline_-_line-height: 1.3em !important;)
+youtube.com##html:not(.style-scope):style(--ytd-user-comment_-_font-size: 13px !important;)
+youtube.com##html:not(.style-scope):style(--paper-font-common-base_-_font-family: "YouTube Noto",Roboto,arial,sans-serif !important;)
+youtube.com##html:style(font-family: "YouTube Noto",Roboto,arial,sans-serif !important;)
 youtube.com##html:not(.style-scope):style(--yt-spec-text-secondary: #767676 !important;)
-youtube.com##ytd-compact-video-renderer #video-title.ytd-compact-video-renderer,.title.ytd-guide-entry-renderer,paper-button.ytd-button-renderer,ytd-expander.ytd-video-secondary-info-renderer:style(font-size: 13px !important;)
+youtube.com##ytd-compact-video-renderer #video-title.ytd-compact-video-renderer,.title.ytd-guide-entry-renderer,paper-button.ytd-button-renderer,ytd-expander.ytd-video-secondary-info-renderer,paper-tabs.ytd-c4-tabbed-header-renderer:style(font-size: 13px !important;)
 youtube.com##yt-view-count-renderer[small_],#date.ytd-video-primary-info-renderer,ytd-toggle-button-renderer.style-text[is-icon-button] #text.ytd-toggle-button-renderer,ytd-button-renderer.style-default[is-icon-button] #text.ytd-button-renderer:style(font-size: 11px !important;)
 youtube.com##yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string:hover,#text.ytd-channel-name:hover,#video-title-link.ytd-rich-grid-video-renderer:hover:style(color: #167ac6 !important; text-decoration: underline !important;)
 youtube.com###video-title.ytd-rich-grid-video-renderer,#video-title.yt-simple-endpoint.ytd-grid-video-renderer:style(font-size: 13px !important; color: #167ac6 !important; font-weight: 500 !important;)
 youtube.com###metadata-line.ytd-video-meta-block, ytd-video-meta-block[rich-meta] #channel-name.ytd-video-meta-block, ytd-video-meta-block[rich-meta] #metadata-line.ytd-video-meta-block, ytd-rich-grid-video-renderer[mini-mode] #video-title.ytd-rich-grid-video-renderer, #video-title.ytd-rich-grid-video-renderer, #metadata-line.ytd-grid-video-renderer:style(line-height: 1.3em !important;)
-youtube.com##ytd-video-meta-block[rich-meta] #channel-name.ytd-video-meta-block, ytd-video-meta-block[rich-meta] #metadata-line.ytd-video-meta-block, #metadata-line.ytd-grid-video-renderer, #byline-container.ytd-grid-video-renderer,#text.ytd-channel-name,#metadata-line.ytd-video-meta-block:style(font-size: 11px !important; font-weight: 500 !important;)
+youtube.com##ytd-video-meta-block[rich-meta] #channel-name.ytd-video-meta-block, ytd-video-meta-block[rich-meta] #metadata-line.ytd-video-meta-block, #metadata-line.ytd-grid-video-renderer, #byline-container.ytd-grid-video-renderer,#metadata-line.ytd-video-meta-block:style(font-size: 11px !important; font-weight: 500 !important;)
 youtube.com###guide-section-title.ytd-guide-section-renderer:style(font-size: 11px !important; color: #f00 !important; line-height: 13px !important;)
 youtube.com##h1.title.ytd-video-primary-info-renderer:style(font-size: 20px !important; font-weight: normal !important; line-height: normal !important;)
 youtube.com###content-text.ytd-comment-renderer,#author-text.yt-simple-endpoint.ytd-comment-renderer:style(font-size: 13px !important; line-height: 1.3em !important;)
 youtube.com###author-text.yt-simple-endpoint.ytd-comment-renderer:style(color: #167ac6 !important; font-weight: 500 !important;)
-youtube.com###author-text.yt-simple-endpoint.ytd-comment-renderer:hover:style(text-decoration: underline !important;)
+youtube.com###author-text.yt-simple-endpoint.ytd-comment-renderer:hover,ytd-grid-video-renderer #video-title.yt-simple-endpoint.ytd-grid-video-renderer:hover:style(text-decoration: underline !important;)
 ! mast-head
-youtube.com##html:not([dark]) *> #container.ytd-masthead:style(height: 49px !important; border-bottom: 1px solid #e8e8e8 !important;)
+youtube.com##ytd-masthead.shell,#container.ytd-masthead:style(height: 49px !important;)
+youtube.com##html:not(.style-scope):not([dark]):style(--ytd-masthead-height: 49px !important;)
+youtube.com##html:not([dark]) *> #container.ytd-masthead:style(max-height: 49px !important; border-bottom: 1px solid #e8e8e8 !important;)
 !youtube.com###logo-icon-container.ytd-topbar-logo-renderer:style(width: 100px !important; height: 30px !important;)
 ! search box
 youtube.com###container.ytd-searchbox,#search-icon-legacy.ytd-searchbox:style(border-radius: 0 !important;)
 ! left sidebar guide
 youtube.com###guide-spacer.ytd-app:style(margin-top: 50px !important;)
-youtube.com##html:not([dark]) *> app-drawer#guide,html:not([dark]) *> ytd-guide-renderer.ytd-app:style(max-width: 230px !important; border-right: 1px solid #e8e8e8 !important;)
+youtube.com##html:not([dark]) *> app-drawer#guide:style(border-right: 1px solid #e8e8e8 !important;)
+youtube.com##ytd-app:style(--app-drawer-width: 230px !important;)
 youtube.com##paper-item.ytd-guide-entry-renderer:style(height: 40px !important;)
 youtube.com###endpoint.yt-simple-endpoint.ytd-guide-entry-renderer:style(min-height: 40px !important;)
 youtube.com##paper-item.ytd-guide-entry-renderer:style(height: 28px !important;)
@@ -82,10 +93,12 @@ youtube.com##ytd-watch-flexy:not([theater]):not([fullscreen]) #primary.ytd-watch
 youtube.com##ytd-watch-flexy[flexy_] #primary.ytd-watch-flexy, ytd-watch-flexy[flexy_] #secondary.ytd-watch-flexy:style(padding-right: 10px !important;)
 youtube.com###content.ytd-rich-section-renderer > *.ytd-rich-section-renderer:style(margin-bottom: 10px !important;)
 youtube.com##.guide-icon.ytd-guide-entry-renderer:style(margin-right: 10px !important;)
+youtube.com###items.ytd-grid-renderer > ytd-grid-video-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-radio-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-channel-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-playlist-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-movie-playlist-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-movie-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-show-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-game-card-renderer.ytd-grid-renderer:style(margin-bottom: 20px !important;)
+youtube.com##ytd-browse-secondary-contents-renderer.ytd-two-column-browse-results-renderer:style(margin-left: 10px !important; padding: 15px !important;)
 ! box-shadow
-youtube.com##ytd-two-column-browse-results-renderer,#items.ytd-watch-next-secondary-results-renderer,#info.ytd-watch-flexy,#meta.ytd-watch-flexy,ytd-comments,ytd-two-column-search-results-renderer[center-results] #primary.ytd-two-column-search-results-renderer:style(box-shadow: 0 1px 2px rgba(0,0,0,.1) !important;)
+youtube.com###primary.ytd-two-column-browse-results-renderer,ytd-browse-secondary-contents-renderer.ytd-two-column-browse-results-renderer,#items.ytd-watch-next-secondary-results-renderer,#info.ytd-watch-flexy,#meta.ytd-watch-flexy,ytd-comments,ytd-two-column-search-results-renderer[center-results] #primary.ytd-two-column-search-results-renderer,#header.ytd-browse > *.ytd-browse:style(box-shadow: 0 1px 2px rgba(0,0,0,.1) !important;)
 ! grid title
-youtube.com###title.ytd-rich-shelf-renderer, #title.ytd-rich-grid-renderer:style(font-size: 14px !important; line-height: 1.3em !important;)
+youtube.com###title.ytd-rich-shelf-renderer, #title.ytd-rich-grid-renderer:style(font-size: 15px !important; line-height: 1.3em !important;)
 youtube.com###grid-title.ytd-rich-grid-renderer:style(margin: 10px 0 0 10px !important;)
 youtube.com###rich-shelf-header.ytd-rich-shelf-renderer:style(margin: 10px 0 10px 0px !important;)
 ! grid
@@ -93,10 +106,14 @@ youtube.com###rich-shelf-header.ytd-rich-shelf-renderer:style(margin: 10px 0 10p
 youtube.com##ytd-two-column-browse-results-renderer:style(max-width: 66vw !important; min-width: 640px !important; margin-top: 10px !important;)
 youtube.com##html:not([dark]) *> ytd-rich-shelf-renderer:style(border-top: 1px solid #e2e2e2 !important;)
 youtube.com##html:not([dark]) *> #show-more-button.ytd-rich-shelf-renderer:style(border-bottom: 1px solid #e2e2e2 !important;)
+youtube.com##html:not([dark]) *> #button.ytd-menu-renderer yt-icon.ytd-menu-renderer:style(border-radius: 100% !important;)
+youtube.com##html:not([dark]) *> #button.ytd-menu-renderer yt-icon.ytd-menu-renderer:hover:style(background-color: white !important; box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24) !important;)
 ! thumbs
 youtube.com##html:not(.style-scope):style(--ytd-rich-grid-item-margin: 10px !important;)
 youtube.com##ytd-thumbnail.ytd-rich-grid-video-renderer:style(margin-bottom: 4px !important;)
 youtube.com##ytd-rich-item-renderer:style(width: 196px !important;)
+!youtube.com##html:not(.style-scope):style(--ytd-grid-thumbnail_-_width: 196px !important; --ytd-rich-grid-item-min-width: 196px !important; --ytd-rich-grid-item-max-width: 196px !important; --ytd-rich-grid-mini-item-min-width: 196px !important; --ytd-rich-grid-mini-item-max-width: 196px !important; --ytd-rich-grid-movie-max-width: 196px !important;)
+!youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 6 !important;)
 youtube.com##h3.ytd-rich-grid-video-renderer,h3.ytd-grid-video-renderer:style(margin: 0 !important;)
 youtube.com##ytd-rich-item-renderer:style(margin-bottom: 12px !important;)
 youtube.com###meta.ytd-rich-grid-video-renderer:style(padding-right: 0 !important;)
@@ -104,11 +121,22 @@ youtube.com###meta.ytd-rich-grid-video-renderer:style(padding-right: 0 !importan
 youtube.com###details.ytd-rich-grid-video-renderer:style(cursor: auto !important; pointer-events: none !important;)
 youtube.com###details.ytd-rich-grid-video-renderer *> a, #details.ytd-rich-grid-video-renderer *> button.yt-icon-button:style(cursor: pointer !important; pointer-events: initial !important;)
 ! channels
-!youtube.com###header.ytd-c4-tabbed-header-renderer:style(--app-header-background-front-layer_-_background-size: 66vw 175px !important; --app-header-background-front-layer_-_background-position: center 0 !important;)
+youtube.com###header.ytd-c4-tabbed-header-renderer:style(--app-header-background-front-layer_-_background-size: 66vw 175px !important; --app-header-background-front-layer_-_background-position: center 0 !important;)
+youtube.com##ytd-c4-tabbed-header-renderer[has-channel-art][guide-persistent-and-visible] .banner-visible-area.ytd-c4-tabbed-header-renderer:style(height: 175px !important;)
 youtube.com##ytd-section-list-renderer:style(padding: 0 15px !important;)
 youtube.com###channel-container *> #text.ytd-channel-name:style(font-size: 20px !important;)
 youtube.com###channel-container *> #text.ytd-channel-name:hover:style(text-decoration: initial !important; color: initial !important;)
+youtube.com###header.ytd-browse:style(width: 66vw !important;)
 youtube.com###avatar.ytd-c4-tabbed-header-renderer
+youtube.com##paper-icon-button.paper-tabs:style(width: 32px !important; height: 32px !important;)
+youtube.com##html:not([dark]) *> paper-tabs.ytd-c4-tabbed-header-renderer:style(height: 32px !important; color: #333 !important; text-transform: initial !important;)
+youtube.com###tabs-container.ytd-c4-tabbed-header-renderer,app-toolbar.ytd-c4-tabbed-header-renderer:style(height: 32px !important;)
+youtube.com###channel-header.ytd-c4-tabbed-header-renderer:style(padding: 15px 15px 0 15px !important;)
+youtube.com##paper-tabs.ytd-c4-tabbed-header-renderer:style(--paper-tabs-selection-bar-color: #f00 !important;)
+!youtube.com###tabsContent.paper-tabs > :not(#selectionBar):hover:style(box-shadow: inset 0 -3px #f00 !important;)
+youtube.com##paper-tabs.ytd-c4-tabbed-header-renderer:style(margin-left: 0 !important; padding-bottom: 0 !important;)
+! no point in showing the channel name in channels
+youtube.com##ytd-browse[page-subtype=channels] *> #byline-container.ytd-grid-video-renderer,ytd-browse[page-subtype=channels] *> #channel-name.ytd-video-meta-block
 ! player
 ! Disabled because it's very buggy
 !youtube.com##ytd-watch-flexy[flexy_]:style(--ytd-watch-flexy-min-player-width: 280px !important; --ytd-watch-flexy-max-player-width: 1280px !important; --ytd-watch-flexy-max-player-height: 720px !important; --ytd-watch-flexy-max-player-height: 192px !important;)
