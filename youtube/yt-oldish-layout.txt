@@ -70,7 +70,7 @@ youtube.com###author-text.yt-simple-endpoint.ytd-comment-renderer:style(color: #
 youtube.com###author-text.yt-simple-endpoint.ytd-comment-renderer:hover,ytd-grid-video-renderer #video-title.yt-simple-endpoint.ytd-grid-video-renderer:hover:style(text-decoration: underline !important;)
 ! mast-head
 youtube.com##ytd-masthead.shell,#container.ytd-masthead:style(height: 49px !important;)
-youtube.com##html:not(.style-scope):not([dark]):style(--ytd-masthead-height: 49px !important;)
+youtube.com##html:not(.style-scope):style(--ytd-masthead-height: 49px !important;)
 youtube.com##html:not([dark]) *> #container.ytd-masthead:style(max-height: 49px !important; border-bottom: 1px solid #e8e8e8 !important;)
 !youtube.com###logo-icon-container.ytd-topbar-logo-renderer:style(width: 100px !important; height: 30px !important;)
 ! search box
@@ -79,6 +79,7 @@ youtube.com###container.ytd-searchbox,#search-icon-legacy.ytd-searchbox:style(bo
 youtube.com###guide-spacer.ytd-app:style(margin-top: 50px !important;)
 youtube.com##html:not([dark]) *> app-drawer#guide:style(border-right: 1px solid #e8e8e8 !important;)
 youtube.com##ytd-app:style(--app-drawer-width: 230px !important;)
+youtube.com##ytd-guide-renderer.ytd-app:style(width: 230px !important;)
 youtube.com##paper-item.ytd-guide-entry-renderer:style(height: 40px !important;)
 youtube.com###endpoint.yt-simple-endpoint.ytd-guide-entry-renderer:style(min-height: 40px !important;)
 youtube.com##paper-item.ytd-guide-entry-renderer:style(height: 28px !important;)
@@ -134,12 +135,15 @@ youtube.com###tabs-container.ytd-c4-tabbed-header-renderer,app-toolbar.ytd-c4-ta
 youtube.com###channel-header.ytd-c4-tabbed-header-renderer:style(padding: 15px 15px 0 15px !important;)
 youtube.com##paper-tabs.ytd-c4-tabbed-header-renderer:style(--paper-tabs-selection-bar-color: #f00 !important;)
 !youtube.com###tabsContent.paper-tabs > :not(#selectionBar):hover:style(box-shadow: inset 0 -3px #f00 !important;)
+youtube.com##paper-tab.ytd-c4-tabbed-header-renderer:style(padding: 0 15px !important;)
 youtube.com##paper-tabs.ytd-c4-tabbed-header-renderer:style(margin-left: 0 !important; padding-bottom: 0 !important;)
 ! no point in showing the channel name in channels
 youtube.com##ytd-browse[page-subtype=channels] *> #byline-container.ytd-grid-video-renderer,ytd-browse[page-subtype=channels] *> #channel-name.ytd-video-meta-block
+! player page
+youtube.com##ytd-watch-flexy:style(--ytd-watch-flexy-sidebar-width: 416px !important; --ytd-watch-flexy-masthead-height: 49px !important;)
 ! player
 ! Disabled because it's very buggy
-!youtube.com##ytd-watch-flexy[flexy_]:style(--ytd-watch-flexy-min-player-width: 280px !important; --ytd-watch-flexy-max-player-width: 1280px !important; --ytd-watch-flexy-max-player-height: 720px !important; --ytd-watch-flexy-max-player-height: 192px !important;)
+!youtube.com##ytd-watch-flexy[flexy_]:style(--ytd-watch-flexy-max-player-width: 1280px !important; --ytd-watch-flexy-max-player-height: 720px !important;)
 !youtube.com##.ytp-chapter-hover-container, .ytp-chrome-bottom:style(width: 100% !important;)
 !youtube.com##.ytp-hover-progress-light, .ytp-chapter-hover-container, .ytp-chrome-bottom:style(left: 0 !important;)
 !youtube.com##.html5-main-video:style(max-width: 1280px !important; max-height: 720px !important;)
@@ -157,11 +161,10 @@ youtube.com##paper-button.ytd-expander:style(width: 100% !important; margin: 0px
 youtube.com##html:not([dark]) *> paper-button.ytd-expander:style(border-top: 1px solid #e8e8e8 !important;)
 youtube.com##.more-button.ytd-video-secondary-info-renderer, .less-button.ytd-video-secondary-info-renderer:style(font-size: 12px !important;)
 youtube.com##ytd-author-comment-badge-renderer[creator]:style(--ytd-author-comment-badge-background-color: #008bec !important;)
-youtube.com###name.ytd-author-comment-badge-renderer:style(color: #fff !important;)
-youtube.com##ytd-author-comment-badge-renderer[creator] *> #text.ytd-channel-name:style(color: #fff !important;)
 youtube.com##.more-button.ytd-comment-renderer, .less-button.ytd-comment-renderer:style(text-transform: uppercase !important; font-size: 12px !important;)
-! make avatars square
-youtube.com###author-thumbnail.ytd-comment-renderer yt-img-shadow.ytd-comment-renderer:style(border-radius: 0 !important;)
+! avatars
+youtube.com###author-thumbnail.ytd-comment-renderer yt-img-shadow.ytd-comment-renderer,#avatar.ytd-video-owner-renderer,yt-img-shadow.ytd-mini-channel-renderer:style(border-radius: 0 !important;)
+youtube.com###author-thumbnail.ytd-comment-renderer yt-img-shadow.ytd-comment-renderer:style(width: 48px height !important: 48px !important;)
 ! search results
 youtube.com##ytd-two-column-search-results-renderer[center-results] #primary.ytd-two-column-search-results-renderer:style(padding: 0 18px !important; border: none !important;)
 youtube.com##ytd-two-column-search-results-renderer *> #video-title.ytd-video-renderer:style(font-size: 18px !important; font-weight: 300 !important; color: #167ac6 !important;)
