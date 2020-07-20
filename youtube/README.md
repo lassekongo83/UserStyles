@@ -1,6 +1,7 @@
 ## YouTube oldish layout
 
 This UserStyle was converted from my extension [YouTube Classic Polymer](https://github.com/lassekongo83/yt-classic-polymer).
+(Media queries are not supported in uBlock Origin, so this UserStyle is only made for 1920x1080 screen sizes. Use the extension or the CSS from the extension in a UserStyle manager if you use a different screen size.)
 
 A UserStyle and filter that redesigns the YouTube polymer design to look like the old design from around 2015. This UserStyle is meant to be used in uBlock Origin on a modern browser. It's just not a UserStyle, it's also a filter that blocks some network requests etc. It filters out and disables some of the newer features on the site that wasn't available in the old design + a couple of other annoyances - like:
 
