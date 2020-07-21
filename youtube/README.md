@@ -5,7 +5,7 @@ This UserStyle was converted from my extension [YouTube Classic Polymer](https:/
 
 A UserStyle and filter that redesigns the YouTube polymer design to look like the old design from around 2015. This UserStyle is meant to be used in uBlock Origin on a modern browser. It's just not a UserStyle, it's also a filter that blocks some network requests etc. It filters out and disables some of the newer features on the site that wasn't available in the old design + a couple of other annoyances - like:
 
-* Miniplayer script is blocked, and the button to enable it is filtered out.
+* ~~Miniplayer script is blocked, and the button to enable it is filtered out.~~ (Update: Actually requires you to use [my extension](https://github.com/lassekongo83/yt-classic-polymer) / or simply install [this userscript](https://pastebin.com/9SSvndJt).)
 * End screen (thumbnails at the end of the video) is blocked.
 * Animated thumbnails are blocked.
 * Buyable movies from search results are being filtered out.
