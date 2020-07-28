@@ -10,8 +10,8 @@ IN_FILE="yt-classic.css"
 OUT_FILE="yt.txt"
 DOMAIN="youtube.com"
 
-# First we convert the only "600px" media query we want to preserve
-sed 's/@media (min-width: 600px) { html:not(.style-scope) { --ytd-grid-video-item_-_width: 196px/html:not(.style-scope):style(--ytd-grid-video-item_-_width: 196px/g' $IN_FILE > $OUT_FILE
+# First we convert the only "900px" media query we want to preserve
+sed 's/@media (min-width: 900px) { html:not(.style-scope) { --ytd-grid-video-item_-_width: 196px/html:not(.style-scope):style(--ytd-grid-video-item_-_width: 196px/g' $IN_FILE > $OUT_FILE
 # Then remove the media queries we're not interested in
 sed -i -n -e '/@media.*1800/p' -e '/@media/!p' $OUT_FILE
 
