@@ -3,36 +3,23 @@
 ! Homepage: https://github.com/lassekongo83/UserStyles
 ! Description: A user style that restyles sweclockers.com. This one can be added to uBlock Origin.
 
-||sweclockers.com/gfx/ext/monster/monsterBoxLogo.gif
-sweclockers.com##.fbShareButton
-sweclockers.com##.social_bookmarks
-sweclockers.com###fbLikeButton
-sweclockers.com###adblockBanner
-sweclockers.com###newsticker
-sweclockers.com###mainSide
-sweclockers.com##.sidemenu
-sweclockers.com##.ad
-sweclockers.com##.adForumSticker
-sweclockers.com###prisjaktThread
-sweclockers.com##.cdonspons
-sweclockers.com##.banner
-sweclockers.com##.prisjaktPopular
-sweclockers.com##.monsterSide
-sweclockers.com##.articleFooter:has(.pjTitle)
-sweclockers.com###wdgtMainMonsterJobs
-sweclockers.com##html:style(font-family: Tahoma,Arial,Helvetica,"Segoe UI",Meiryo,sans-serif !important)
-sweclockers.com##h1:style(font-family: Tahoma,Arial,Helvetica,"Segoe UI",Meiryo,sans-serif !important)
-sweclockers.com##h2:style(font-family: Tahoma,Arial,Helvetica,"Segoe UI",Meiryo,sans-serif !important)
-sweclockers.com##h3:style(font-family: Tahoma,Arial,Helvetica,"Segoe UI",Meiryo,sans-serif !important)
-sweclockers.com##h4:style(font-family: Tahoma,Arial,Helvetica,"Segoe UI",Meiryo,sans-serif !important)
-sweclockers.com##h5:style(font-family: Tahoma,Arial,Helvetica,"Segoe UI",Meiryo,sans-serif !important)
-sweclockers.com##h6:style(font-family: Tahoma,Arial,Helvetica,"Segoe UI",Meiryo,sans-serif !important)
-! Bredd med mera
-sweclockers.com##.insiderColumn>.fixed
-sweclockers.com##.whiteBody:style(width: 100% !important)
-sweclockers.com##.inner:style(padding-right: 0 !important)
-sweclockers.com##.mainContent:style(width: 85% !important)
-sweclockers.com##.commentsBubble:style(margin-right: 0 !important; margin-left: 0 !important)
-! Inbäddade YouTube videos
-sweclockers.com##object[id*="youtube"]:style(width: 640px !important; height: 360px !important)
-sweclockers.com##iframe.youtube-player:style(width: 640px !important; height: 360px !important)
+sweclockers.com#@#a[title="Youtube"]
+sweclockers.com###prisjakt-popular
+sweclockers.com##.col-side
+sweclockers.com##.col-outer-side
+sweclockers.com##.col-content,.col-content-wide:style(margin-right: 0 !important; max-width: unset !important;)
+sweclockers.com##.content-primary,.forum-post-header, .forum-post-body:style(border-radius: 0 !important;)
+sweclockers.com##.table>.row>.cell, .table>.head>.row>.cell, .table>.body>.row>.cell, .table>.foot>.row>.cell:style(padding: 5px 10px !important;)
+sweclockers.com##.row.forumThread>.cell:style(padding: 5px 10px !important;)
+sweclockers.com##.table .title h2:style(font-size: 12px !important;)
+sweclockers.com##.forum-post:style(margin-bottom: 10px !important;)
+sweclockers.com##.forum-post-body .col:style(padding: 10px !important;)
+sweclockers.com##html:style(font-family: Tahoma, Arial, Helvetica, "Segoe UI", Meiryo, sans-serif !important;)
+sweclockers.com##.forum-post-body .signature .bbcode, .subforums > button, .subforums > .button:style(font-size: 10px !important;)
+sweclockers.com##.col-basis > button, .col-basis > .button, .bbSpoiler .spoilerHeader > button, .bbSpoiler .spoilerHeader > .button:style(padding: 3px 8px !important; font-size: 10px !important;)
+sweclockers.com##button .icon, .button .icon:style(width: 14px !important; height: 14px !important;)
+sweclockers.com##.bbSpoiler .spoilerHeader > button, .bbSpoiler .spoilerHeader > .button:style(font-weight: 700 !important;)
+sweclockers.com##.bbSpoiler .spoilerHeader:style(margin-bottom: 8px !important;)
+sweclockers.com##.table>caption, .table>.caption:style(padding: 6px 18px !important;)
+sweclockers.com##.content-head:style(margin: 0 8px 8px 8px !important;)
+sweclockers.com##.article-sponsored, .article-sponsored ~ div
