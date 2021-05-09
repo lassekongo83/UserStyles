@@ -1,7 +1,7 @@
 # UserStyles
 Various user styles for a couple of websites.
 
-uBlock Origin can be used to restyle websites, just like a UserStyle manager like Stylus for example. Styles need to be written with the `:style()` syntax. For example `github.com##*:style(background: black !important; color: white !important;)` will make all backgrounds on github black and all text white.
+uBlock Origin can be used to restyle websites just like a UserStyle manager like Stylus for example. Styles need to be written with the `:style()` syntax. For example `github.com##*:style(background: black !important; color: white !important;)` will make all backgrounds on github black and all text white.
 
 Limitations:
 * `url(...)` is not supported.
