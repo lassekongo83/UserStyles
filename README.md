@@ -1,7 +1,11 @@
 # UserStyles
 Various user styles for a couple of websites.
 
-uBlock Origin and Nano Adblocker can be used to restyle websites, just like a UserStyle manager like Stylus for example. Styles need to be written with the `:style()` syntax. For example `github.com##*:style(background: black !important; color: white !important;)` will make all backgrounds on github black and all text white. `url(...)` is not supported.
+uBlock Origin can be used to restyle websites, just like a UserStyle manager like Stylus for example. Styles need to be written with the `:style()` syntax. For example `github.com##*:style(background: black !important; color: white !important;)` will make all backgrounds on github black and all text white.
+
+Limitations:
+* `url(...)` is not supported.
+* media-queries are not supported.
 
 ### How to subscribe to a style
 - Open uBlock Origin's or Nano Adblocker's settings page
