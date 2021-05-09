@@ -5,7 +5,7 @@ uBlock Origin can be used to restyle websites, just like a UserStyle manager lik
 
 Limitations:
 * `url(...)` is not supported.
-* media-queries are not supported.
+* media-queries and similar CSS is not supported.
 
 ### How to subscribe to a style
 - Open uBlock Origin's or Nano Adblocker's settings page
