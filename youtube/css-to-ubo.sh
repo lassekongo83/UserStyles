@@ -4,7 +4,9 @@
 # Do not try to run this script on any CSS files that aren't parsed with "sassc -M -t compact". (It won't do any harm, but the output can't be read by uBO.)
 # uBlock Origin UserStyles do not support media queries and url().
 
-# The file being converted in this script is https://github.com/lassekongo83/yt-classic-polymer/blob/master/src/css/yt-classic.css
+# The file being converted in this script is https://raw.githubusercontent.com/lassekongo83/yt-classic-polymer/master/src/css/yt-classic.css
+rm -f yt-classic.css
+wget https://raw.githubusercontent.com/lassekongo83/yt-classic-polymer/master/src/css/yt-classic.css
 
 IN_FILE="yt-classic.css"
 OUT_FILE="yt.txt"
