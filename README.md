@@ -8,7 +8,7 @@ Limitations:
 * media-queries and similar CSS is not supported.
 
 ### How to subscribe to a style
-- Open uBlock Origin's or Nano Adblocker's settings page
+- Open uBlock Origin's settings page
 - Go to the `Filter lists` pane
 - Copy the raw link of the style you want to subscribe to. (The `Raw` button here on GitHub.)
 - Scroll to the bottom and click `Import`
