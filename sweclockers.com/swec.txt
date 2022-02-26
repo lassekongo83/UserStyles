@@ -4,11 +4,9 @@
 ! Description: A user style that restyles sweclockers.com. This one can be added to uBlock Origin.
 
 sweclockers.com#@#a[title="Youtube"]
-sweclockers.com###prisjakt-popular
-sweclockers.com##.col-side
-sweclockers.com##.col-outer-side
+sweclockers.com##.col-side, .col-outer-side
 sweclockers.com##.col-content,.col-content-wide:style(margin-right: 0 !important; max-width: unset !important;)
-sweclockers.com##.content-primary,.forum-post-header, .forum-post-body, .table.round-corners:style(border-radius: 0 !important;)
+sweclockers.com##.content-primary, .forum-post-header, .forum-post-body, .table.round-corners:style(border-radius: 0 !important;)
 sweclockers.com##.table>.row>.cell, .table>.head>.row>.cell, .table>.body>.row>.cell, .table>.foot>.row>.cell:style(padding: 5px 10px !important;)
 sweclockers.com##.row.forumThread>.cell:style(padding: 5px 10px !important;)
 sweclockers.com##.table .title h2:style(font-size: 12px !important;)
@@ -22,4 +20,3 @@ sweclockers.com##.bbSpoiler .spoilerHeader > button, .bbSpoiler .spoilerHeader >
 sweclockers.com##.bbSpoiler .spoilerHeader:style(margin-bottom: 8px !important;)
 sweclockers.com##.table>caption, .table>.caption:style(padding: 6px 18px !important;)
 sweclockers.com##.content-head:style(margin: 0 8px 8px 8px !important;)
-sweclockers.com##.article-sponsored, .article-sponsored ~ div
