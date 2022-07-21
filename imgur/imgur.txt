@@ -3,7 +3,13 @@
 ! Homepage: https://github.com/lassekongo83/UserStyles
 ! Description: A user style that restyles imgur.com. This one can be added to uBlock Origin.
 
-imgur.com##.TrendingTags, .Footer, .SnowFlakesBg, .BottomRecirc, .GiveEmeraldButton, .EmeraldBanner, .EmeraldButtonV2, .EmeraldButton, .emerald-button, a[class*="EmeraldBanner"]
+! Block some junk
+||api.imgur.com/secretsanta/
+/ad-free/image.png$domain=imgur.com
+/emerald-bg-banner.$image,domain=imgur.com
+imgur.com##.TrendingTags, .Footer, .SnowFlakesBg, .BottomRecirc, .GiveEmeraldButton, .EmeraldBanner, .EmeraldButtonV2, .EmeraldButton, .emerald-button, a[class*="EmeraldBanner"], .div-ad-active-top_banner, #sidebar-bottom-ads, .advertisement, [class^="BannerTop"], [id^="cta-container-placeholder"]
+imgur.com##.Post-item:has(.Post-item-external-ad)
+imgur.com##.InteractiveBackground:remove()
 
 imgur.com##.Post-item-title:style(font-family: "Gill Sans", Segoe UI, sans-serif !important; font-weight: 400 !important; line-height: 1em !important;)
 
@@ -15,3 +21,6 @@ imgur.com##.BottomRecirc, .GiveEmeraldButton
 imgur.com##.NewCover.isFixed:style(box-shadow:none!important)
 imgur.com##.GalleryComment-actions .actions-btn.toggle-replies:style(color:#01b96b!important)
 imgur.com##.GalleryPage-background:style(background:none!important;transition:none!important;)
+
+! fixes the scroll stop
+imgur.com##.App-container:style(margin-bottom: 1px !important;)
