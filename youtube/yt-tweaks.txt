@@ -1,6 +1,15 @@
-! Fixes some things that annoys me
+! Title: YouTube Tweaks
+! Expires: 7 days (update frequency)
+! Homepage: https://github.com/lassekongo83/UserStyles
+! Description: This style is meant to be used in uBlock Origin.
+
+! Blocking network requests
 page-skeleton.css$domain=youtube.com
+
+! Removing elements
 youtube.com###details #avatar-link
+
+! Rich grid styles
 youtube.com###contents.ytd-rich-grid-renderer:style(max-width:1280px!important;)
 youtube.com###contents,html:style(--ytd-rich-grid-items-per-row:6!important; --ytd-rich-grid-mini-item-max-width:196px!important; --ytd-rich-grid-item-margin:10px!important; --ytd-rich-grid-slim-item-max-width:196px!important; --ytd-rich-grid-mini-item-min-width:196px!important; --ytd-rich-grid-item-min-width:196px!important; --ytd-rich-grid-item-max-width:196px!important; --ytd-grid-thumbnail_-_width:196px!important; --ytd-grid-thumbnail_-_height:110px!important; --ytd-thumbnail-height:110px!important;)
 youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row:6!important;)
