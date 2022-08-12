@@ -7,7 +7,7 @@
 page-skeleton.css$domain=youtube.com
 
 ! Removing elements
-youtube.com###details #avatar-link
+youtube.com###details #avatar-link, [id*="skeleton"]
 
 ! Rich grid styles
 youtube.com###contents.ytd-rich-grid-renderer:style(max-width:1280px!important;)
