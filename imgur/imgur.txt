@@ -14,7 +14,7 @@ imgur.com##.InteractiveBackground:remove()
 imgur.com##.Post-item-title:style(font-family: "Gill Sans", Segoe UI, sans-serif !important; font-weight: 400 !important; line-height: 1em !important;)
 
 ! Blur downvoted posts
-imgur.com##a.downvote *> video,a.downvote *> img:style(filter: blur(10px) !important;)
+imgur.com##a.downvote video, a.downvote img:style(filter: blur(10px) !important;)
 
 ! Comment and post section
 imgur.com##.BottomRecirc, .GiveEmeraldButton
