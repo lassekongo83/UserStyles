@@ -5,7 +5,8 @@
 
 sweclockers.com#@#a[title="Youtube"]
 sweclockers.com##.col-side, .col-outer-side
-sweclockers.com##.col-content,.col-content-wide:style(margin-right: 0 !important; max-width: unset !important;)
+sweclockers.com##.col-content:style(margin-right: 0 !important; max-width: unset !important;)
+sweclockers.com##.col-content-wide:style(margin-right: 0 !important; max-width: unset !important;)
 sweclockers.com##.content-primary, .forum-post-header, .forum-post-body, .table.round-corners:style(border-radius: 0 !important;)
 sweclockers.com##.table>.row>.cell, .table>.head>.row>.cell, .table>.body>.row>.cell, .table>.foot>.row>.cell:style(padding: 5px 10px !important;)
 sweclockers.com##.row.forumThread>.cell:style(padding: 5px 10px !important;)
