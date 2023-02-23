@@ -39,4 +39,4 @@ loading.se##.PostItem-portrait-container img:style(border-radius: 0 !important;)
 ! Förstora bilder
 loading.se##.PostItem-text p img:style(max-height: initial !important; margin-top: 8px !important; margin-bottom: 8px !important;)
 ! Lägg till en * efter datumet på redigerade inlägg
-loading.se##.PostItem-TheDate[title^="Redigerat"]:before:style(content: "*" !important;)
+loading.se##.PostItem-TheDate[title^="Redigerat"]::before:style(content: "*" !important;)
