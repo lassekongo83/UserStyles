@@ -14,3 +14,11 @@ youtube.com###contents.ytd-rich-grid-renderer:style(max-width:1280px!important;)
 youtube.com###contents,html:style(--ytd-rich-grid-items-per-row:6!important; --ytd-rich-grid-mini-item-max-width:196px!important; --ytd-rich-grid-item-margin:10px!important; --ytd-rich-grid-slim-item-max-width:196px!important; --ytd-rich-grid-mini-item-min-width:196px!important; --ytd-rich-grid-item-min-width:196px!important; --ytd-rich-grid-item-max-width:196px!important; --ytd-grid-thumbnail_-_width:196px!important; --ytd-grid-thumbnail_-_height:110px!important; --ytd-thumbnail-height:110px!important;)
 youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row:6!important;)
 youtube.com##ytd-rich-grid-renderer > #contents > ytd-rich-grid-row,ytd-rich-grid-renderer > #contents > ytd-rich-grid-row > #contents:style(display:contents!important;)
+
+! square thumbnails
+youtube.com##ytd-thumbnail[size=medium] a.ytd-thumbnail, ytd-thumbnail[size=medium]::before, ytd-thumbnail[size=large] a.ytd-thumbnail, ytd-thumbnail[size=large]::before:style(border-radius: 0 !important;)
+
+! disable miniplayer
+youtube.com##ytd-miniplayer[has-playlist-data][active]
+youtube.com##ytd-miniplayer[has-playlist-data][closed] ~ * .ytp-miniplayer-button
+youtube.com##ytd-miniplayer[has-playlist-data] #movie_player video:remove()
