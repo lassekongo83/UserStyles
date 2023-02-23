@@ -51,7 +51,7 @@ loading.se##.Picture-hack, img[alt="play-pause-bubble-icon"]:style(width: 120px 
 loading.se##.PostItem-portrait-container:style(margin: 10px !important;)
 loading.se##.PostItem-username:style(font-size: 12px !important; font-weight: bold;)
 ! Lägg till en * efter datumet på redigerade inlägg
-loading.se##.PostItem-date > div[title^="Redigerat"]:before:style(content: "*" !important;)
+loading.se##.PostItem-date > div[title^="Redigerat"]::before:style(content: "*" !important;)
 ! Förstora bilder
 loading.se##.PostItem-text p img:style(max-height: initial !important; margin-top: 8px !important; margin-bottom: 8px !important;)
 
