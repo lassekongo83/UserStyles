@@ -1,0 +1,15 @@
+! Title: Lemmy Style
+! Expires: 7 days (update frequency)
+! Homepage: https://github.com/lassekongo83/UserStyles
+! Description: A couple of personal fixes to lemmy to make it a little bit more similar to some of the old reddit subreddit styles.
+
+beehaw.org,lemmy.world,startrek.website##body:style(font-family:verdana,arial,helvetica,sans-serif!important; background-color:#f8f8f8!important;)
+beehaw.org,lemmy.world,startrek.website##.post-listing .post-title h5:style(font-size:1rem!important;)
+beehaw.org,lemmy.world,startrek.website##.comment p, .comment li, .card p, .card li:style(font-size:.85rem!important; color:#222!important;)
+beehaw.org,lemmy.world,startrek.website##.small, .text-muted span.mr-2, .text-muted span.mx-2, .text-muted span.ml-1, .text-muted span.mx-1, label.btn:style(font-size:.85rem!important;)
+beehaw.org,lemmy.world,startrek.website##.container, .container-md, .container-sm, .container-lg, .container-xl:style(max-width:100%!important;)
+beehaw.org,lemmy.world,startrek.website##.col-sm-2:style(flex:0 0 8%!important; max-width:8%!important; display:flex!important; align-items:center!important; text-align:center!important;)
+beehaw.org,lemmy.world,startrek.website##.thumbnail:style(object-fit:cover!important; min-height:60px!important; max-height:80px!important; max-width:80px!important; min-width:80px!important; width:100%!important;)
+beehaw.org,lemmy.world,startrek.website##.main-content-wrapper, .comment:not(.ml-1, .mx-1):style(background-color:white!important; box-shadow:0 .125rem .25rem rgba(0,0,0,.1) !important; padding:1rem!important; margin-bottom:1rem!important;)
+beehaw.org,lemmy.world,startrek.website##.comment :not(.comment-node[style^="border-left"]).border-top:style(border-top:none!important;)
+beehaw.org,lemmy.world,startrek.website##.navbar, .card:style(background-color:white!important;)
