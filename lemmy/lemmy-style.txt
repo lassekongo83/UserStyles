@@ -18,11 +18,13 @@ lemmy.world##.container, .container-md, .container-sm, .container-lg, .container
 lemmy.world##.main-content-wrapper, .comment:not(.ml-1, .mx-1):style(background-color:white!important; box-shadow:0 1px 4px 0 rgba(0,0,0,0.14) !important; padding:1rem!important; margin-bottom:1rem!important; border-radius:.5rem!important;)
 lemmy.world##.comment :not(.comment-node[style^="border-left"]).border-top:style(border-top:none!important;)
 lemmy.world##.comment .details:style(padding-top:0!important; padding-bottom:0!important;)
+lemmy.world##.comment.ml-1:style(margin-left: 1rem !important;)
 lemmy.world##.navbar, .card:style(background-color:white!important;)
 lemmy.world##a.text-body:visited:style(color:purple!important;)
 lemmy.world##.post-listing .thumbnail:style(max-height: 60px !important;)
 lemmy.world##.post-listing .col-sm-2:style(flex: 0 0 10% !important; max-width: 10% !important;)
 lemmy.world##.post-listing .img-icon:style(width: 1rem !important; height: 1rem !important;)
+lemmy.world##.post-listing + hr.my-3:style(margin-right: -1rem !important; margin-left: -1rem !important;)
 lemmy.world##.post-listing + hr:only-child, .post-listing + hr:last-child
 lemmy.world##.post-title:style(line-height: 1 !important;)
 lemmy.world##.post-title h5:style(margin-bottom: 0 !important; line-height: 1.2 !important; font-size: medium !important;)
